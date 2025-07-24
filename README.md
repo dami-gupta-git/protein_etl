@@ -51,18 +51,16 @@ and post-processing) as placeholders for future implementation.
 
 2. **Clone the repository and Setup**
 
-```bash
-git clone https://github.com/your-username/protein_data_eng.git
-cd protein_data_eng
-Edit the .env file (as needed)
+Clone the repo as
 ```
-3. **Install and Run**
-
-Docker has to be installed, and running on your machine. 
+git clone https://github.com/your-username/protein_data_eng.git
+```
 Navigate to the root directory to make the scripts executable
 ```
+cd protein_data_eng
 chmod +rwx scripts/*
 ```
+Make sure that Docker is installed and running. 
 
 Build and run
 ```
