@@ -74,13 +74,19 @@ Open a browser, and point it to `http://localhost:8080/`. This will bring you to
 Use credentials `admin` as both Username and Password to Sign In. This will bring up a list of DAGs,
 click on the `protein_etl` DAG, and press on the `Trigger DAG` button. 
    
-This will run the Airflow DAG. (You can click on `Graph` to see the UI)
+This will run the Airflow DAG. 
 
-To view the output from the run in the postgres db, you can use the connection string
+5. **Output**
+If you click the `Graph` button, you will see the final DAG. If all tasks run successfully, it will look like the below   
+<img width="1520" height="578" alt="image" src="https://github.com/user-attachments/assets/aca6b216-99af-4c67-ba4e-42d19dd118ab" />
+<br>     
+
+To view the output from the run in the postgres db, you can use the connection string  
 
 `postgres://postgres:postgres@localhost:5436/postgres`
 
-5. **Stopping the Application** 
+
+7. **Stopping the Application** 
 When you want to stop the application, do
 ```
 docker compose down
