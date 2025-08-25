@@ -4,9 +4,7 @@ import pandas as pd
 from airflow import DAG
 from airflow.decorators import task
 from airflow.utils.dates import days_ago
-from airflow.utils.task_group import TaskGroup
 from sqlalchemy import create_engine, text
-from CleaningOperator import CleaningOperator
 
 default_args = {
     'owner': 'dgupta'
@@ -14,7 +12,7 @@ default_args = {
 
 with DAG(
         dag_id='protein_etl',
-        description='DAG for processing protein data',
+        description='DAG for processing data',
         default_args=default_args,
         start_date=days_ago(1),
         schedule_interval=None
@@ -98,11 +96,11 @@ with DAG(
             df.to_sql(name='protein_info', con=engine, schema='protein_etl', if_exists='append')
 
             # handle nested object
+            # TODO need to add the protein id
             list_dm = [x[1] for x in dm.items()]
             dm_df = pd.DataFrame(list_dm)
-            df_concat = pd.concat([df["protein_id"], dm_df], axis=1)
-            df_concat['run_id'] = latest_run_id
-            df_concat.to_sql(name='protein_developability_metrics', con=engine, schema='protein_etl', if_exists='append')
+            dm_df['run_id'] = latest_run_id
+            dm_df.to_sql(name='protein_developability_metrics', con=engine, schema='protein_etl', if_exists='append')
 
 
     @task
@@ -155,32 +153,18 @@ with DAG(
     # These methods will be generated dynamically because files and file types will change.
     # Data in the first set of tables is stored unaltered as text data.
     # Formatting will take place at later stages.
-    with TaskGroup(group_id="read_raw_data") as read_raw_data:
-        read_data_protein_info_task = read_data_protein_info(engine, latest_run_id)
-        read_data_in_vivo_measurements_task = read_data_in_vivo_measurements(latest_run_id)
-        read_data_protein_binding_task = read_data_protein_binding(engine, latest_run_id)
-
-    with TaskGroup(group_id="run_checks") as run_data_checks_task:
-        run_data_checks_protein_info_task = run_data_checks()
-        run_data_checks_in_vivo_measurements_task = run_data_checks()
-        run_data_checks_protein_binding_task = run_data_checks()
-        run_data_checks_protein_developability_metrics_task = run_data_checks()
+    read_data_protein_info_task = read_data_protein_info(engine, latest_run_id)
+    read_data_in_vivo_measurements_task = read_data_in_vivo_measurements(latest_run_id)
+    read_data_protein_binding_task = read_data_protein_binding(engine, latest_run_id)
 
     # The data looks normalized to me, any reshaping and postprocessing will
     # depend on business needs
 
-    #run_data_checks_task = run_data_checks()
-
-    clean_protein_binding_data_task = CleaningOperator(
-        task_id='clean_protein_binding_data',
-        engine=engine,
-        schema='protein_etl',
-        table='protein_binding',
-        col='affinity'
-    )
-
+    run_data_checks_task = run_data_checks()
+    reshape_data_task = reshape_data()
     post_process_task = post_process()
     update_final_table_task = update_final_table()
 
-
-    latest_run_id  >> read_raw_data>> run_data_checks_task >> clean_protein_binding_data_task >> post_process_task >> update_final_table_task
+    latest_run_id >> [
+        read_data_protein_info_task, read_data_in_vivo_measurements_task, read_data_protein_binding_task
+    ] >> run_data_checks_task >> reshape_data_task >> post_process_task >> update_final_table_task
