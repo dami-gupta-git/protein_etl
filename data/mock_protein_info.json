@@ -259,6 +259,2346 @@
         "stability_score": 0.5431709300377895,
         "expression_level_mg_L": 495.2345622696747
       }
+    },
+    {
+      "protein_id": "PRT-021",
+      "sequence": "FTNFQWLTEEYWILVDCQGSDIPQRRMDYPDACKQRSRVTMIDQPRYRRMRECAGSHGWAEQQHKVAPVVMYTFTLWLPGKTATNNCHNCWGNWQTHWCLGVEERCEYIVLQATICTRGSNYAFQPPGNTAQFDSVSEYYHGRKELVVDA",
+      "molecular_weight_da": 21186.47955037024,
+      "theoretical_pi": 8.423756940863043,
+      "structure_type": "IgG",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.36542581443373967,
+        "stability_score": 0.4949375719955701,
+        "expression_level_mg_L": 191.00503795204125
+      }
+    },
+    {
+      "protein_id": "PRT-022",
+      "sequence": "IAFMLWDAQTTQICESSYRSKRCLCPDSDVVEAFKLKPADGAYYLCYRQMAITFYDPRCKWQKLTSAGLKQMHKYYQHSQLPGHEHKPMCKGRGEKSPRYMYAVQDRYPFNEPCDLMKSYAQKTERIDKSVTVGFG",
+      "molecular_weight_da": 21164.19038738196,
+      "theoretical_pi": 6.79424162542629,
+      "structure_type": "VHH",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.17567822134229727,
+        "stability_score": 0.6285914679612222,
+        "expression_level_mg_L": 295.9561529144171
+      }
+    },
+    {
+      "protein_id": "PRT-023",
+      "sequence": "TWEDTRGIFAQPWHSKCLCWHAVYMRMDFAEGKLADWTFPPQEAIMVAYTHHKRFGTYIYVGTQCMMHMTPPAEQSFFPPERKTST",
+      "molecular_weight_da": 28615.624321463267,
+      "theoretical_pi": 6.831896069761863,
+      "structure_type": "Fab",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.7026292949157588,
+        "stability_score": 0.4879352944105013,
+        "expression_level_mg_L": 264.1940377792099
+      }
+    },
+    {
+      "protein_id": "PRT-024",
+      "sequence": "ECGFPHRYMRLQFGPTMNLDNPYCTPDFRVPRFWVIHRSELPFVGYIYAHNFFRIDWFGFVIYHQGCTAGRPYSLIDQDQVCNLSNKM",
+      "molecular_weight_da": 29122.885904794828,
+      "theoretical_pi": 8.61291221292619,
+      "structure_type": "Fc-fusion",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.12261746685994845,
+        "stability_score": 0.7133946799476159,
+        "expression_level_mg_L": 159.66886244547032
+      }
+    },
+    {
+      "protein_id": "PRT-025",
+      "sequence": "NESNLALGHGCIFGLYWRRYGHAPHNKRHVWAEYMQFYKSFGIARECAMNIVRTFHIAPDCDDGWFYTDDAVMKCKGNQTMFGFEDLNNQPPL",
+      "molecular_weight_da": 33153.15749591544,
+      "theoretical_pi": 9.327739894070579,
+      "structure_type": "scFv",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.22584790172704283,
+        "stability_score": 0.8328476488136384,
+        "expression_level_mg_L": 55.9014863246412
+      }
+    },
+    {
+      "protein_id": "PRT-026",
+      "sequence": "HFCYMMQRLKQHCEIDSIKAYHFVVSVLRRMDARSYIWTFTKGKWVMQTVYNMFPPSAACYMHSVWHLIFVWHPQKMKAMKEQSKYAVEESEEKPETDQQAL",
+      "molecular_weight_da": 23280.3875320866,
+      "theoretical_pi": 8.833374939664875,
+      "structure_type": "scFv",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.17936510636007663,
+        "stability_score": 0.04208362146807698,
+        "expression_level_mg_L": 392.5940455779125
+      }
+    },
+    {
+      "protein_id": "PRT-027",
+      "sequence": "TYYPNSSHYSAGVRVYVPNMLCAEGPHRFQGKANMASINTAPEGYSYCMGETWQLGDPMMPKFDIGDWVIWPIEPGNANWFCLCADP",
+      "molecular_weight_da": 22275.218605450922,
+      "theoretical_pi": 5.608984491661515,
+      "structure_type": "Fc-fusion",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.3848923735480101,
+        "stability_score": 0.3962478031099048,
+        "expression_level_mg_L": 320.80364461101465
+      }
+    },
+    {
+      "protein_id": "PRT-028",
+      "sequence": "TRHEHDAERGICYCNQWSWYWKMEQCWNACHYKLPEIDDTWGQVRSGEDALWDLYRYKERISYDTHLQCKPVRHDRDSFRSGWLEWRKKLTIGGCHRTTQYDVDIYDFLCLCY",
+      "molecular_weight_da": 31263.899751174737,
+      "theoretical_pi": 8.611104837192734,
+      "structure_type": "Fc-fusion",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.7637058351194588,
+        "stability_score": 0.2983212054315708,
+        "expression_level_mg_L": 427.68083015823163
+      }
+    },
+    {
+      "protein_id": "PRT-029",
+      "sequence": "KMFVLIGVCTICTEWEYLRMTKHDSKHVDRRTMQSFMQGHYLAELQCGQMFNWKDANDHNIERQAHNQRRRHSMDCSICNCHREINERPWPILKPIIWCIFPSASNADTYEK",
+      "molecular_weight_da": 26864.620625148385,
+      "theoretical_pi": 9.326416469876035,
+      "structure_type": "scFv",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.22742874639861355,
+        "stability_score": 0.062375571451155354,
+        "expression_level_mg_L": 316.1786132655811
+      }
+    },
+    {
+      "protein_id": "PRT-030",
+      "sequence": "CNFGMPDICVSRVECGGGGFHPYIALTDFNYDHRDCFSTDENDMMFKMRTQLAHGSSTACYKHHDQIDQVTVEQHAWQCMHAHASWECEHHKRRAAYTL",
+      "molecular_weight_da": 26536.335181693714,
+      "theoretical_pi": 8.69280610379985,
+      "structure_type": "scFv",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.2627661254642515,
+        "stability_score": 0.5591101920311442,
+        "expression_level_mg_L": 370.87385924834314
+      }
+    },
+    {
+      "protein_id": "PRT-031",
+      "sequence": "VHCDMNEHDRFKEAMEPDTFSFKSEYTCMSPHERSDYFCQTQSAFQPSACDISVYHFESKLPQYPMLFMSFYVWTYFFYMNQFIIANYTCEVMIFLQCFPFTAKGCIMQLHERMIDFKRVMWQWRAENGQCLTFLFAIDHREM",
+      "molecular_weight_da": 20415.37531950979,
+      "theoretical_pi": 6.680601869380139,
+      "structure_type": "Fab",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.6957510863219498,
+        "stability_score": 0.4644602207960399,
+        "expression_level_mg_L": 297.8334586568998
+      }
+    },
+    {
+      "protein_id": "PRT-032",
+      "sequence": "RVILVKGGDLVFSVAQTHNRRLKYHEKSTVWDNHATFCRRERNANFDQWAIFGHGGFVWDDLDNDCGEIMYWAWPEHEEWRDVFKKEFYSGNRYSWESSEFWSNR",
+      "molecular_weight_da": 27935.857720548236,
+      "theoretical_pi": 5.691026201578766,
+      "structure_type": "IgG",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.9008706353261005,
+        "stability_score": 0.07472912947526966,
+        "expression_level_mg_L": 362.15561798878736
+      }
+    },
+    {
+      "protein_id": "PRT-033",
+      "sequence": "KQGFATIPLKLGGVQILPKWSQLGAWPSETRMGWEKYRHSHFKMVNVFFLIERLFNAGPMEKLQCNSYHMGCYLGRSTECNNLWCMIVRCYELAVGHEIWIATDDSMTFNKGNI",
+      "molecular_weight_da": 28310.679824518113,
+      "theoretical_pi": 5.509506953707295,
+      "structure_type": "Fab",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.8975972932474624,
+        "stability_score": 0.3654407354674831,
+        "expression_level_mg_L": 447.18733082802333
+      }
+    },
+    {
+      "protein_id": "PRT-034",
+      "sequence": "LRQYWFAWSGQWPMVMQWTQYYKIVTMDLMQSGLNCQTPFAECTGININNVALQSDTKVKCNDCKDQIHCPWAREFYVVCSRQDPVCLEHQRWYDYAPVNW",
+      "molecular_weight_da": 34413.5469515897,
+      "theoretical_pi": 5.524854908737687,
+      "structure_type": "Fc-fusion",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.30234367496338754,
+        "stability_score": 0.00952808340715694,
+        "expression_level_mg_L": 425.87990657846507
+      }
+    },
+    {
+      "protein_id": "PRT-035",
+      "sequence": "ETGMHFRVCHIMTPDAISQYFAVSTAGWCGCEIIRKHKTADPPNSRLHAQAIRYMYNPSWEQYNENISFHTCLDGWPNGQMELGYWPINVKHELNCKWPDKMYFCCSMWLPQHKV",
+      "molecular_weight_da": 28065.995779825113,
+      "theoretical_pi": 9.417428964358049,
+      "structure_type": "IgG",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.19920855798374082,
+        "stability_score": 0.35587822146701353,
+        "expression_level_mg_L": 460.43005809416474
+      }
+    },
+    {
+      "protein_id": "PRT-036",
+      "sequence": "MRRFMNYWNYCTILHLYYHPVMWEMRHGFHLRLNPTYSFPACQGSRGGKMTEYPMDSDCVEDSGEDAWPEMQCKIDERTDQVKDWYVNKQYFPLDNHNQIKHEGS",
+      "molecular_weight_da": 29640.39555545863,
+      "theoretical_pi": 7.155033665738991,
+      "structure_type": "Fab",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.6780205935309219,
+        "stability_score": 0.5987273723806894,
+        "expression_level_mg_L": 131.84984625456548
+      }
+    },
+    {
+      "protein_id": "PRT-037",
+      "sequence": "WFKYYDVNAWTGDFMNPAAMTWRAMTAERWNMSGCFYWKGRFETQSLVCFLIKWMKLLSHLCRTEHRGQLPYHAGDKVMSCEPDMMKSMKEKFWYTKNYADFFGMHSQGYPTFYNKEYMADNEGDDPQ",
+      "molecular_weight_da": 32359.010048984936,
+      "theoretical_pi": 5.6434135768517875,
+      "structure_type": "VHH",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.1338809609923497,
+        "stability_score": 0.5934308027352618,
+        "expression_level_mg_L": 110.39990322541581
+      }
+    },
+    {
+      "protein_id": "PRT-038",
+      "sequence": "EDISRFVFFDISSVVEKRDVFLNSDGTDKRYDMRYDPQSCVIAGCITTNCRSVNGCTYRANVENCLNLTPYYRNSDGGDNCTGEFDTESPWWGGQQFNPKKLYIFRLVRLDVLRYVSISTYV",
+      "molecular_weight_da": 22987.61693782638,
+      "theoretical_pi": 8.217635568842685,
+      "structure_type": "IgG",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.10092160557886076,
+        "stability_score": 0.6913877414852772,
+        "expression_level_mg_L": 206.065285851232
+      }
+    },
+    {
+      "protein_id": "PRT-039",
+      "sequence": "QRKWGAEGWYRSGWDPKYWFTESPPPHWRMHWTCYSREYCMPPDGKEEGGDQFFDICRITKGYCWLYPHWLGGQLRVVHHYGFKTVMEGIMFHSEWWTCYLHHDINKFP",
+      "molecular_weight_da": 26193.80676158897,
+      "theoretical_pi": 5.216215836226709,
+      "structure_type": "IgG",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.7571065167236151,
+        "stability_score": 0.20301251239042806,
+        "expression_level_mg_L": 99.22988735776653
+      }
+    },
+    {
+      "protein_id": "PRT-040",
+      "sequence": "FEFEAQGDVWSTQHSWQCTHRMRINIENTREEKTWVFYMSASRFNYQKTAADWFRSGDQIRHETSWTTMQVCVCVNCLTPNKE",
+      "molecular_weight_da": 30224.597108526934,
+      "theoretical_pi": 7.333482787838332,
+      "structure_type": "Fc-fusion",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.05457395041160262,
+        "stability_score": 0.8866988055975755,
+        "expression_level_mg_L": 464.0119151119019
+      }
+    },
+    {
+      "protein_id": "PRT-041",
+      "sequence": "LATGSDSCTNNTLQHQRIAYGLKIYVPSKGKVRDLDPVCHWNLKMCEVKSRARGTWCYSVITKVGSRHFVYLYVIHYAKSRENLYCCQHAFMNDNPCSWHPMMNINVHCYHFKFQGWDKIIMDHKWKPFATLDPQMQWC",
+      "molecular_weight_da": 22493.623916433902,
+      "theoretical_pi": 8.94126023537538,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.24976937152621614,
+        "stability_score": 0.29527179486140054,
+        "expression_level_mg_L": 228.12180397443387
+      }
+    },
+    {
+      "protein_id": "PRT-042",
+      "sequence": "YVRAPMFSFCMYIYADGDRQQRWTMNMQSLDFALLMTDIHWGSQGTYILNISCWCAMWILRTYELQEPYGPCNMLMEDFKAEQRTIQVKEWETFCYPMLCSRGMGRPNALHRPLVK",
+      "molecular_weight_da": 32062.345563842395,
+      "theoretical_pi": 5.932083962022888,
+      "structure_type": "IgG",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.3061765811817311,
+        "stability_score": 0.07881247791089607,
+        "expression_level_mg_L": 492.7490582910095
+      }
+    },
+    {
+      "protein_id": "PRT-043",
+      "sequence": "VSNHEPQWFHAGDDNEAHIIKSWTWKMCWRYTCTDATSDETTGLWSLWDAHYAARWQHGWQRMQTRLLFGQWPSCGRPCTKAPEQEGTAHVMKIGVELMWHFSAFPSE",
+      "molecular_weight_da": 33713.98989749127,
+      "theoretical_pi": 5.726910578588813,
+      "structure_type": "Fab",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.831789308006568,
+        "stability_score": 0.9373501870803176,
+        "expression_level_mg_L": 217.86237376456214
+      }
+    },
+    {
+      "protein_id": "PRT-044",
+      "sequence": "LLCKFVVMTGPQKPQELEFQWDRKCITCGYTWHEHGESRSDTPLVEQDGTEGPSNKFKQEGWAYKRERKNDQCHLQMASDLRPHSRVCHVNTACWQPDLPKPAYWNEYADFTCGHVQFHYEKGE",
+      "molecular_weight_da": 33898.806228938236,
+      "theoretical_pi": 8.327892161207727,
+      "structure_type": "Fc-fusion",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.054759313988653524,
+        "stability_score": 0.4780440168169722,
+        "expression_level_mg_L": 287.3062702796124
+      }
+    },
+    {
+      "protein_id": "PRT-045",
+      "sequence": "LWFIMDEWAETPCTEDLIADLYVSKLHWWRRYEDYFELLSTQSNTGAADTGIFNCCDWDEEMDDALHMCETMPFKFQCLIGKYRNTRWQFDCASNEELTNQPPMFCTECWMEAFRVNGINEFDISIDKILFEAFYVIYLL",
+      "molecular_weight_da": 21215.457825010795,
+      "theoretical_pi": 6.927971298699373,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.7493872969655103,
+        "stability_score": 0.9080898324033264,
+        "expression_level_mg_L": 468.7168346600477
+      }
+    },
+    {
+      "protein_id": "PRT-046",
+      "sequence": "INSCYEQSGLRFLQFQRKTKFHHYWIHSIAGHWYGMMKPLFGTRDSWYLDCIYNGICALSRQEQNNTMDNDSWDHFKDEHGHFETWTPQNHVLILCHYVLYRTFEGKTCEWARVWPPDQLRHRSHW",
+      "molecular_weight_da": 22945.732176386395,
+      "theoretical_pi": 7.668420912558922,
+      "structure_type": "Fab",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.7152723632453238,
+        "stability_score": 0.7325438022501383,
+        "expression_level_mg_L": 286.92694212088793
+      }
+    },
+    {
+      "protein_id": "PRT-047",
+      "sequence": "ECYCAADPDLRIFKRQFKMCNLGPDGGHHFFHFVLHHISQNMRWPWHQCWDLEEYDQAIEIIDRQFFFWDNGIHFDSGPRHHRWASEFPCYATAQTRRCSRDTVASCYEEAKVPMSKYAPEHKG",
+      "molecular_weight_da": 31334.162612759807,
+      "theoretical_pi": 8.083374458753466,
+      "structure_type": "Fc-fusion",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.2775385839790223,
+        "stability_score": 0.8824630548498323,
+        "expression_level_mg_L": 423.13860350700514
+      }
+    },
+    {
+      "protein_id": "PRT-048",
+      "sequence": "HDFFDDSKTHRMTAFAPHIINCGDRDNWAAPQKNACRCMEMERNQREQSDKFPAVKQVKIRAWCIRDSQTDLNPMHMMCYAIKHMK",
+      "molecular_weight_da": 29039.850933613816,
+      "theoretical_pi": 8.962300440805643,
+      "structure_type": "Fab",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.6532374589149823,
+        "stability_score": 0.5893814664963636,
+        "expression_level_mg_L": 263.7777570903332
+      }
+    },
+    {
+      "protein_id": "PRT-049",
+      "sequence": "YVSIINVWSNIKQANLTPTKTCTEMVQPLKGWGHMCEIVMVFIYSYMARQCKTFPNPENPKTINESRGYIGQSQYGRTSWALTRKAHAPWEAVNIHHIDWFWRFCTCNDCHNKFISRNEVLSCGFMNYCQNGW",
+      "molecular_weight_da": 30274.65397076332,
+      "theoretical_pi": 7.155751845300275,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.19643988691785308,
+        "stability_score": 0.42867476959926065,
+        "expression_level_mg_L": 120.7487220644472
+      }
+    },
+    {
+      "protein_id": "PRT-050",
+      "sequence": "CIINIKISRDKIIPFTYYGNVIHQKEATWSFENEYFCIFHWNADHCSKYGNTRADHIKYSRLCVLANGQWTLDCIKSWSWGTCEWVMDCIQYSRSLAGHHQDIFCTHDVCASKLKQPYSEIPE",
+      "molecular_weight_da": 25015.88037610187,
+      "theoretical_pi": 4.961798282693487,
+      "structure_type": "Fab",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.8249571036122076,
+        "stability_score": 0.8735974263228794,
+        "expression_level_mg_L": 333.89669761834176
+      }
+    },
+    {
+      "protein_id": "PRT-051",
+      "sequence": "ALVLWHHDMLMNHALSRMHQEDEEQYLFKNPHTIVIHMGLIDSSGCQCCFDTQKTAGLDVAYTDLPHIRAKQEGWHNNHPNINYDINCPDWFDLFDEKLGTNMPMKG",
+      "molecular_weight_da": 24283.766679824228,
+      "theoretical_pi": 8.67051343479201,
+      "structure_type": "IgG",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.5221149102703508,
+        "stability_score": 0.21484183966508175,
+        "expression_level_mg_L": 120.53290997144629
+      }
+    },
+    {
+      "protein_id": "PRT-052",
+      "sequence": "PITYIMWTKTAIKEYKEHFSWQPFIECEWNVRIADSGMCNHMDYHTRDMGWSLKTGLRPFYLGSKLICRVKEICGFQRFLPHN",
+      "molecular_weight_da": 29569.34827659626,
+      "theoretical_pi": 5.117287535929348,
+      "structure_type": "Fab",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.12211430877517127,
+        "stability_score": 0.10504776623291823,
+        "expression_level_mg_L": 359.58187941219984
+      }
+    },
+    {
+      "protein_id": "PRT-053",
+      "sequence": "DWHLDYWNKSTQVYNFQPGCKGVDNPKQDNYDWPVGEGYPYNGWCKSMMWDWVVHHIMCLAFFKHKWPMDTMTIAINSQHMVHKIAEWCLYIHYVDKWPGRNAWADGESRYSSCW",
+      "molecular_weight_da": 22507.416387196714,
+      "theoretical_pi": 6.80076698799844,
+      "structure_type": "Fc-fusion",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.4889500138009083,
+        "stability_score": 0.4631950051861289,
+        "expression_level_mg_L": 282.25555191244257
+      }
+    },
+    {
+      "protein_id": "PRT-054",
+      "sequence": "IDGGNQEVQHCKFEWKQREIEGGMRHEAEDYVSHFLIDQDCDCSCYQYHQGWHKEPLGYVRNKNAHPIKIRMPAKAMCRPMYFVLWDVCPCG",
+      "molecular_weight_da": 23034.22405176229,
+      "theoretical_pi": 4.8470341793018035,
+      "structure_type": "Fc-fusion",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.1181454678975864,
+        "stability_score": 0.7901135840796982,
+        "expression_level_mg_L": 55.92891917089566
+      }
+    },
+    {
+      "protein_id": "PRT-055",
+      "sequence": "FCLRKMRFFVQLQAWCHPAEPRYQYHEEEQHHSYKSGHMLPEEQIWFTSTIFVGMKGWCQKPCMFLKTIKNEMTLWLCPNPIMLALKDR",
+      "molecular_weight_da": 29806.202278263438,
+      "theoretical_pi": 5.227503011508822,
+      "structure_type": "Fab",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.7025201142352876,
+        "stability_score": 0.31807643354801163,
+        "expression_level_mg_L": 388.7155168576738
+      }
+    },
+    {
+      "protein_id": "PRT-056",
+      "sequence": "DYFNRRFDFFARVDHFIEHNKQINRRHYWWMKYSHEGLRMHQTLEIPVWLGLWDEHHMHRKHHKQKYHKQISRDENSAAASKCCQCVEYSMYKVASRQGKWARINSYNLRDPMEQAAH",
+      "molecular_weight_da": 24759.660681242567,
+      "theoretical_pi": 4.744514107164296,
+      "structure_type": "VHH",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.9919341508303186,
+        "stability_score": 0.2240437034139704,
+        "expression_level_mg_L": 350.46294018251547
+      }
+    },
+    {
+      "protein_id": "PRT-057",
+      "sequence": "CPAHEDMQVSGIQHNSGRYFFSYMELYVTADSGFGFHTTGIEQNWEDTWFDEMMTCFVVIDLQHSVPNCCWCNAPCINIKRFCLQTEHMDVEG",
+      "molecular_weight_da": 34534.09863224363,
+      "theoretical_pi": 5.849336432893462,
+      "structure_type": "Fc-fusion",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.8543391882524387,
+        "stability_score": 0.44776567682612667,
+        "expression_level_mg_L": 454.4770005808403
+      }
+    },
+    {
+      "protein_id": "PRT-058",
+      "sequence": "ANNACHGQEMINGIQSGVFQVPCTFFAGHRYLYTANLWIYSPMMTYYLVCGSNDFRCPQSIACLYGICRIKLETDTMLDNKAKCQPFPHL",
+      "molecular_weight_da": 29598.758305480642,
+      "theoretical_pi": 8.201332843155729,
+      "structure_type": "VHH",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.19237434346479654,
+        "stability_score": 0.161163127213808,
+        "expression_level_mg_L": 207.79062993313096
+      }
+    },
+    {
+      "protein_id": "PRT-059",
+      "sequence": "FPLFDTNYGTYEFPHPDYYRSLPRPDFFEIWARWHPMMIMTKPSNRCCFPSMWAGAWNNLCEYSVPSETPNWMVRYHWCQTPDNYLSGWIVAMNHEAGRGEYVEVDACFPPYTTPFCFCNPADMSPEATWPQLFNYEGA",
+      "molecular_weight_da": 30015.457290452614,
+      "theoretical_pi": 6.399422449066687,
+      "structure_type": "Fab",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.7007571971234375,
+        "stability_score": 0.7606640010176873,
+        "expression_level_mg_L": 322.15665294106327
+      }
+    },
+    {
+      "protein_id": "PRT-060",
+      "sequence": "TCTLPSYRYPGISSCMQINNGIQCMMHKDTCQQEDTVHLRGEYAKYQVCMRWHHIDMQESAPTIVLDCDWYFNETTTMACLYDGCINNRRQ",
+      "molecular_weight_da": 22288.47903194102,
+      "theoretical_pi": 7.147382503039417,
+      "structure_type": "IgG",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.42812859401962733,
+        "stability_score": 0.4527089132517147,
+        "expression_level_mg_L": 407.14302167005525
+      }
+    },
+    {
+      "protein_id": "PRT-061",
+      "sequence": "PFPTCFYSGDRLIRGNLFMMIMALGFCYHFVCCWHLFDGSRPAWFHNKYGHMDFIWYRKHMSKQYMFVWAAENRDNKVVERRTNKDFIPDHTWVGPVEWPRTNDLCLVPHTNESSKNLYMDCAGSWHCMQAKIFEGRG",
+      "molecular_weight_da": 22247.076796253114,
+      "theoretical_pi": 8.540196870562372,
+      "structure_type": "Fab",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.9614336752706499,
+        "stability_score": 0.9917876765135348,
+        "expression_level_mg_L": 159.2399119785817
+      }
+    },
+    {
+      "protein_id": "PRT-062",
+      "sequence": "CEWPGPYDCKYHAYVHMLMPGMCVYFIKVNQAVLHFQGKWVYQIMWQMAMAKKYEFQNCEDELWEPMLKSRYAMRARYRASTDHGMVKWKHEHLLIMYRVLESCDQN",
+      "molecular_weight_da": 27136.52187684425,
+      "theoretical_pi": 7.624451786875315,
+      "structure_type": "VHH",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.31642222096417105,
+        "stability_score": 0.08787866666518751,
+        "expression_level_mg_L": 95.23405888058488
+      }
+    },
+    {
+      "protein_id": "PRT-063",
+      "sequence": "IEDMEDPRMYELYFSIHEQPNSATWSMYHGPSSEAECGCWILMDNKVKVWKMHVHEMYAFVWNRQACFLITYYMTCKGSNTQNPHMCVSAYPVQTIIGCEMLDAYRIPDTTTCCHHWKTCIIAMWYEVTSPSLEA",
+      "molecular_weight_da": 34868.684482290686,
+      "theoretical_pi": 8.028881457100617,
+      "structure_type": "scFv",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.5295557884861899,
+        "stability_score": 0.22560490809085865,
+        "expression_level_mg_L": 321.1899183551963
+      }
+    },
+    {
+      "protein_id": "PRT-064",
+      "sequence": "WWFKAVVYPQQNGFRKYFPKQVVGLHRTMKCEAKQLHFLKNTKFVLVGNKWVWCADCGLQYEPECTQCPNNQIKQKATADEKGIRAYCDVNESSQFWKLLMIQHCHYNDNAEQRKFEVFWYTLQVYPQILKYMYMFT",
+      "molecular_weight_da": 29746.65707595185,
+      "theoretical_pi": 6.466622444696078,
+      "structure_type": "IgG",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.4975210745380604,
+        "stability_score": 0.9020881931762028,
+        "expression_level_mg_L": 439.06974633804407
+      }
+    },
+    {
+      "protein_id": "PRT-065",
+      "sequence": "RALFSWSRGGWCTANVDYKYRINVIPIRDYWILPKMTPKIPQLGTNQPMRNPVIDHHYAIFYYHFGFRFQERITFEEIMMQHISFISRRPEFFHETNTCFNHFMWTVRIPSEQGVHRPWNAQCLLGLTMDHRPMKLHIFPLD",
+      "molecular_weight_da": 25650.314504423157,
+      "theoretical_pi": 8.737573342464557,
+      "structure_type": "scFv",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.17649388705052937,
+        "stability_score": 0.5258528397997287,
+        "expression_level_mg_L": 497.72693922894837
+      }
+    },
+    {
+      "protein_id": "PRT-066",
+      "sequence": "HDEQQKVFHTEKDFTPACLSGSRFDRPKNARYWLNNLMTINVKCGRYGRRHPWFEKFAYQITQNRHDSIVCDQCHQDILEAADVFVCLWLLVQEWKLKPLTDACQPGFFMRWVRQSPESSQDRRVWLHCKTNKF",
+      "molecular_weight_da": 23034.68722048739,
+      "theoretical_pi": 9.374248715062516,
+      "structure_type": "scFv",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.6752950874011615,
+        "stability_score": 0.7980247203126747,
+        "expression_level_mg_L": 260.43175493551547
+      }
+    },
+    {
+      "protein_id": "PRT-067",
+      "sequence": "TGEELNILIGDTRTYTLQLEDYWIWRKRQFFKWNPLFQHAYFFEATSGPDEIWKSKQYTAETSWKVHRSANLESNCHMWLMDQNMMMGQANAKDLTARYPQHNMGKFHECLL",
+      "molecular_weight_da": 30139.23631121259,
+      "theoretical_pi": 5.085748330063812,
+      "structure_type": "scFv",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.47744404116245254,
+        "stability_score": 0.22980966621868604,
+        "expression_level_mg_L": 277.49907506497607
+      }
+    },
+    {
+      "protein_id": "PRT-068",
+      "sequence": "IRKTADTSARYHNQRTTDDIKHPIMCRQLMNPKWPPNIPHKWICKSNGWWMTWVHKKAIFTLGENLAVTYQPMPPCTEQKGIDSSIHGRNAWWFYIND",
+      "molecular_weight_da": 27313.918327408068,
+      "theoretical_pi": 4.999064174452943,
+      "structure_type": "Fc-fusion",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.45274459368827213,
+        "stability_score": 0.2034838825305395,
+        "expression_level_mg_L": 185.65018502655172
+      }
+    },
+    {
+      "protein_id": "PRT-069",
+      "sequence": "SYGNIVCWEHEHDYAYYQLLLAWGHTNTAEESTTPTIDFTAACEHVDHCGQHKVGPPFYVMGGAAVAAVHERWSNMSQWEFGDCVFIIYRLPILNTGLAMWCNQHLIWTQPGALNVQE",
+      "molecular_weight_da": 24634.961291729847,
+      "theoretical_pi": 7.471475728428578,
+      "structure_type": "Fab",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.5873048469357702,
+        "stability_score": 0.05560724899008995,
+        "expression_level_mg_L": 69.0666652058614
+      }
+    },
+    {
+      "protein_id": "PRT-070",
+      "sequence": "AKQRHDRMCRQWNHYHATLRQKHTQVQLHFGPAMIFYTCWMHQPWPQDMCSIEDKMHIFVSRSDVFAPQWSHYNFMNHEILGTDGFDYCIIWEGMGAESGLTHATEMFPG",
+      "molecular_weight_da": 27967.926267288978,
+      "theoretical_pi": 8.468721348158333,
+      "structure_type": "IgG",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.6841039327131453,
+        "stability_score": 0.44808701658043326,
+        "expression_level_mg_L": 211.37737047820283
+      }
+    },
+    {
+      "protein_id": "PRT-071",
+      "sequence": "KMKTKSNANRTWYCFSYWPMWAARTAVCLCLTVMKYHLMDMEHVMIMRTYYIEWSYTRFYIQWWFMWRDAHNMTSRCLPQQSNHGWHNKPWSVHNMQRGWCRWKTWTRVPCHKDDGGDGSLYVYQIALNV",
+      "molecular_weight_da": 34564.96771427175,
+      "theoretical_pi": 5.617497870982263,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.7352110890643585,
+        "stability_score": 0.06780135860866565,
+        "expression_level_mg_L": 334.7698414114947
+      }
+    },
+    {
+      "protein_id": "PRT-072",
+      "sequence": "FRAHQTETFELWQGWYHIVFWIVSGLMHFTAQEDWVSYCKDKKLMMRSWMPRAQTAGPPYCPWLVVSNSINQQCLLDRYEGMNQGNRGRP",
+      "molecular_weight_da": 34092.970368026494,
+      "theoretical_pi": 5.276852421557696,
+      "structure_type": "VHH",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.1025346845231998,
+        "stability_score": 0.9771583316645432,
+        "expression_level_mg_L": 76.43842974684355
+      }
+    },
+    {
+      "protein_id": "PRT-073",
+      "sequence": "QMLKEQKAFSPPGCVRFTCFDLYYLHTMYEDVFEIYVSQLFPPRRNQNGVLTFNELLCCPIFYNESFFGAYPWFGHNQEETRWDPMKDFTRQMFQIEDIMWWHHSPCNKGQVFYGQFGYWLVIVYDCDQQMFQGRG",
+      "molecular_weight_da": 33640.54435764611,
+      "theoretical_pi": 6.9865573471574915,
+      "structure_type": "Fc-fusion",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.9668810725567665,
+        "stability_score": 0.7482564667673965,
+        "expression_level_mg_L": 120.19052306608874
+      }
+    },
+    {
+      "protein_id": "PRT-074",
+      "sequence": "AECILKWEQNHTRWVFLTCKYLYTWLGLDNYGYHKSPLYFHPWPESPEMIFYCLDKLPSVKSKDFFDECLDNNECQLRNPRPPNLHMGREIISAMYMVQHSYRLRSYVMHVVAHPVLQPKEAKPFFDEMKWGIMNQ",
+      "molecular_weight_da": 24098.001268463788,
+      "theoretical_pi": 8.849514092898517,
+      "structure_type": "Fab",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.5677960971710488,
+        "stability_score": 0.0577516607771571,
+        "expression_level_mg_L": 61.90009645354557
+      }
+    },
+    {
+      "protein_id": "PRT-075",
+      "sequence": "VIVMTMLCLCDIIPGKNDDVSYPTEKYVKLHENHNQRTLKCPIFFAIQTTTSLAMHALWMIIIMDPGLLVMVITKTYYPYAMGTF",
+      "molecular_weight_da": 28262.782472634804,
+      "theoretical_pi": 8.023988222284547,
+      "structure_type": "scFv",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.9642227724751973,
+        "stability_score": 0.22993684721829166,
+        "expression_level_mg_L": 100.8470093850053
+      }
+    },
+    {
+      "protein_id": "PRT-076",
+      "sequence": "HLLWFAWDRLGIGEKCLMGLGAKFGKWACQYESCNHWRWEIGREMLPEHISFQTQIIDGVNRTTGKEYHDPIWRQDECMCTTIWRDFHLIKMWLYEACAYFALVQNQMSNWDMDPKHPCITFLP",
+      "molecular_weight_da": 22790.1909198241,
+      "theoretical_pi": 5.1435044129678475,
+      "structure_type": "VHH",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.7039705164352982,
+        "stability_score": 0.7272900371585371,
+        "expression_level_mg_L": 198.11030640010142
+      }
+    },
+    {
+      "protein_id": "PRT-077",
+      "sequence": "NMPFKLDAQVDGFLEHKDLWDQEKSGHSQAQTDTRPANQMYNSMWPDHDIFETFNVGPHLTYLHYMKCRFLWRQACKTSTMRQENGSGCV",
+      "molecular_weight_da": 24692.33865323136,
+      "theoretical_pi": 6.47964322336376,
+      "structure_type": "Fab",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.3140839815080918,
+        "stability_score": 0.10311663401971127,
+        "expression_level_mg_L": 350.8547805501343
+      }
+    },
+    {
+      "protein_id": "PRT-078",
+      "sequence": "SFWWKRAPMNRRGIGPQGMVCSDGDYAERYPFHGPPWCRSEISVMRAKYASGWKDWVVKDPYTFHLAQPIAKADSDHMWYEHPDAAVLQNTVNCVRGWWFDTCEIFMI",
+      "molecular_weight_da": 26133.96539071397,
+      "theoretical_pi": 9.142189599367738,
+      "structure_type": "VHH",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.026746120099839454,
+        "stability_score": 0.10668717368886071,
+        "expression_level_mg_L": 406.9665195317415
+      }
+    },
+    {
+      "protein_id": "PRT-079",
+      "sequence": "CVCTLMNRVWCPNWVSSTNCHCKMPFICSDWYETLCCIYDFNPDGPTWKSWQPSSRCVDVWTLFHNDKDVIHHGCVVGHAQYTSCYMYPPEEMHEQHVAHITLNCRFMLVTPSCESNLFSSQIPNRMVGLPRVPPAQNLIHMWDYPT",
+      "molecular_weight_da": 25162.6999795335,
+      "theoretical_pi": 9.17771778111982,
+      "structure_type": "IgG",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.21396917953350103,
+        "stability_score": 0.8867570556058744,
+        "expression_level_mg_L": 234.01551541312327
+      }
+    },
+    {
+      "protein_id": "PRT-080",
+      "sequence": "HSNVFWPCWHKRRMMHMYPICESVNVDTSEHNAKYVKHCHANFRINHSCWHKCFHETVCVEGSTNQWNPKCEMDLAKANPVPMHVKGCYWLLFHWIFDQMLAWYLKGEPYIRENENEFPGSCVFDQPWWSWFECVLFWRSCDR",
+      "molecular_weight_da": 26948.4890719959,
+      "theoretical_pi": 6.360882395155381,
+      "structure_type": "VHH",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.9712564668846744,
+        "stability_score": 0.9226661216508057,
+        "expression_level_mg_L": 55.4915278508858
+      }
+    },
+    {
+      "protein_id": "PRT-081",
+      "sequence": "FSPRGTDYREPKKTQYRPSYKCVDLHINYLFLGGVCKRIQEVYEFGCCSDGYGMAPDVATQGTYSDNSLCQRKNAHIMAEINQYGHYSGIREWWAGNLMRF",
+      "molecular_weight_da": 24900.00158396412,
+      "theoretical_pi": 7.703387061255394,
+      "structure_type": "Fab",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.6330592828753864,
+        "stability_score": 0.6677906674519986,
+        "expression_level_mg_L": 226.8414894601486
+      }
+    },
+    {
+      "protein_id": "PRT-082",
+      "sequence": "IVRFLHAKIYGTMGRQSSQCGDHCPMTFQNEYYGGIQQVERCGPGTPNEQNFLFPCDYNVVTSRHWSPNTMECCTKGRAYPLSETH",
+      "molecular_weight_da": 21669.044470600056,
+      "theoretical_pi": 6.985558079290893,
+      "structure_type": "Fab",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.4487120824556491,
+        "stability_score": 0.5226403489943523,
+        "expression_level_mg_L": 163.51346655239905
+      }
+    },
+    {
+      "protein_id": "PRT-083",
+      "sequence": "IIGFICTSYFPKHFQVCETLSVFQPQHRDQHNANGSEVTRPLIPNKEEFVSMGPPIWFMQANKVTKEAEYIRDHKPDHVWTYFMTWCGKSIYKPWHC",
+      "molecular_weight_da": 30105.80272168258,
+      "theoretical_pi": 8.684903861477174,
+      "structure_type": "Fc-fusion",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.010018134181307814,
+        "stability_score": 0.10194451906801438,
+        "expression_level_mg_L": 346.94707185748814
+      }
+    },
+    {
+      "protein_id": "PRT-084",
+      "sequence": "RSAAGVSQSLRRGNSDLVGIHPWCVHPTFTWLDGYIGCQLEKGQGFVKPPRDTATYTGSQIPKVRMCYKLHWSYCRKEMRMVHMGHPRFNEYVHATKQPST",
+      "molecular_weight_da": 28953.463454785306,
+      "theoretical_pi": 7.269522818875249,
+      "structure_type": "scFv",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.3813092630726874,
+        "stability_score": 0.4478506819375758,
+        "expression_level_mg_L": 207.87418846520603
+      }
+    },
+    {
+      "protein_id": "PRT-085",
+      "sequence": "ETNAGMTMDSQSCHRGNTRIHYWCLYKLLGCHFMQCMQPHSKHNIHVQWAFDSNLYYLCVDKRYGTNGSNFCTFNNVPISNPLHEDHTAIFTHSGVTTMHPGVGLDAQKTVVYISTWELGMRIICVMVAMNAVCRMVA",
+      "molecular_weight_da": 20025.733589251493,
+      "theoretical_pi": 9.163175371639827,
+      "structure_type": "scFv",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.7101513784789726,
+        "stability_score": 0.5341442028186452,
+        "expression_level_mg_L": 339.7460924882565
+      }
+    },
+    {
+      "protein_id": "PRT-086",
+      "sequence": "RQNIIKDIPAVWHTIIINTQMWLNHNELCIMICSDPRMMSHIHPGCIWGVYSNWRTCILDDPWDINITPDAVDDRGTQFIKSMSWGGDNRLPLFDSKKVKRFVHLIYMP",
+      "molecular_weight_da": 20877.303953775456,
+      "theoretical_pi": 4.904909664184048,
+      "structure_type": "Fc-fusion",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.1801858772038213,
+        "stability_score": 0.5433606086952114,
+        "expression_level_mg_L": 214.78407577592714
+      }
+    },
+    {
+      "protein_id": "PRT-087",
+      "sequence": "KNSTFIFFASIEVLTTHPACVFHYCYQECKPDSWRPYIWWSWKARIQYLWEPDLMNEPKWSTKFYNRRGELTVINPKDTQIFSNHARTNPDYMKSHFFRWPPLIYAPETSGWHQEVPFEIH",
+      "molecular_weight_da": 24102.241613568396,
+      "theoretical_pi": 5.388686967277288,
+      "structure_type": "Fab",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.043995794948449296,
+        "stability_score": 0.3680852344873896,
+        "expression_level_mg_L": 131.27628082508448
+      }
+    },
+    {
+      "protein_id": "PRT-088",
+      "sequence": "ACINQRLLFLQTYHEDVMVDFYLWAVPYDFKKMASINRKHRLIKNFKYGTADSLSMYCQGEAYRDDTKSMFENHQYEFLMHEEHVLHASMDFVTYAMYAAYAKYAADEDEVKDVHWKQFFNHCPFRLNSYWMG",
+      "molecular_weight_da": 25696.21314716836,
+      "theoretical_pi": 8.627776403780189,
+      "structure_type": "Fab",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.5892877574398611,
+        "stability_score": 0.02412171525867146,
+        "expression_level_mg_L": 74.26550524410254
+      }
+    },
+    {
+      "protein_id": "PRT-089",
+      "sequence": "HHCIKVATMALLCACICRMKHAHSANNVEDSAHRLMLNKWDCIAEVPWRNKRGFPDCKVVDWRECPTCHVHCRSQMEHTSMEWQSKQQLVWAIHQFVIPAAH",
+      "molecular_weight_da": 33161.24055394673,
+      "theoretical_pi": 4.639079830366784,
+      "structure_type": "scFv",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.33602795013223485,
+        "stability_score": 0.8599323523029776,
+        "expression_level_mg_L": 187.12596909361085
+      }
+    },
+    {
+      "protein_id": "PRT-090",
+      "sequence": "GDNFCCDRKNYEDPNNNHVVVFVVEKECAFRGWHGWPYFSHARCEKWTTDTHQNDDIERGTYWLGFFFSFNQADPYHMKFYVYWMHHFGYPGKKTEEQPFRVIARHWDITYTLGELRIVCAIWQS",
+      "molecular_weight_da": 29108.37352704529,
+      "theoretical_pi": 8.008364103033346,
+      "structure_type": "VHH",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.6798171865030533,
+        "stability_score": 0.7589406186373772,
+        "expression_level_mg_L": 312.40786297550204
+      }
+    },
+    {
+      "protein_id": "PRT-091",
+      "sequence": "LQTPQDMGDINRSPHGTQFLTLSPHTTTDGGRWHYPHCQLWIARCMHFHLPSAMNFANPDRQCCQTWQSFSGAFHQERPCSCQNEPFYIAFCHPIGI",
+      "molecular_weight_da": 29450.174387793842,
+      "theoretical_pi": 5.1745096815692015,
+      "structure_type": "IgG",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.8703950723638983,
+        "stability_score": 0.5413296872989343,
+        "expression_level_mg_L": 388.4111719566589
+      }
+    },
+    {
+      "protein_id": "PRT-092",
+      "sequence": "NTSEMWQSCSNWNVWMKKHMVEEALMRSMYEDYDESQMTWKHCVRARWIQKPQVHFPVHDHYNLLMDWWMFFWRMPTNATQWRGNATDYQFWRDSHDVVDRKDGDAAYWKPCGTWYLCLMRWGQNIATHVDL",
+      "molecular_weight_da": 23324.585261278215,
+      "theoretical_pi": 7.56260781877309,
+      "structure_type": "VHH",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.5597872480738103,
+        "stability_score": 0.7240003878444358,
+        "expression_level_mg_L": 193.8930557279227
+      }
+    },
+    {
+      "protein_id": "PRT-093",
+      "sequence": "GAITNISALLEVQQNRQWICTHQHELTMECMTPRWSDFDFRHDNKEKTMKDNYLYSIFKQHEKPKGSYYALTHIFMIGSQACQTHHFQIGPIESTPIPIGAYWMRMNKTKYLISNGQILWKIGFGMYKIRP",
+      "molecular_weight_da": 27021.456034312432,
+      "theoretical_pi": 7.930896874113299,
+      "structure_type": "Fab",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.3581341817157885,
+        "stability_score": 0.3592831025117976,
+        "expression_level_mg_L": 110.01708012604514
+      }
+    },
+    {
+      "protein_id": "PRT-094",
+      "sequence": "HQSKSHAPMHNWYWQAYHNLLAPSYQNSDGPFGTNSWFHKMQDEQPKSDCDCMSSIYVIYLQCNMPGIRDAEVYCVRNLSVYIQMFVHRQESLECETETEPFGKLLWQCAVKRGQHQEMVTHYLLDTPLMQC",
+      "molecular_weight_da": 29206.916660808747,
+      "theoretical_pi": 6.287402582774434,
+      "structure_type": "Fab",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.44992005084905895,
+        "stability_score": 0.6157078370353779,
+        "expression_level_mg_L": 361.54741646194134
+      }
+    },
+    {
+      "protein_id": "PRT-095",
+      "sequence": "SVAVKWMHKFKIQGETRRWISDEWHDNFVCQGQQNLHKNNEKNNMDQVVGLFHTLTDDKLDNDPEAETCGQYPWGFSWCWPENDFNKAWNRCTCQFYHYKEQYMNIECLPCHREGSR",
+      "molecular_weight_da": 34707.58745045542,
+      "theoretical_pi": 6.24831750116679,
+      "structure_type": "Fab",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.9044337733291642,
+        "stability_score": 0.9793102649370887,
+        "expression_level_mg_L": 244.31408835380438
+      }
+    },
+    {
+      "protein_id": "PRT-096",
+      "sequence": "PEMGHGLRERHCKYLSMSCNFRYPWYPTLMDAHVAMDTVRCNYKWKYTSNVTWQWCHQVQCDPSSGLKAIVIWKVQDVEQVAWQVHHDQKARDPVPQWRMHPLHYHGCRWWWPAFYGGTCLIFWTRSWRNCC",
+      "molecular_weight_da": 26138.027591042664,
+      "theoretical_pi": 5.284718037670034,
+      "structure_type": "VHH",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.5389125330103235,
+        "stability_score": 0.8412173649798178,
+        "expression_level_mg_L": 334.1647256586404
+      }
+    },
+    {
+      "protein_id": "PRT-097",
+      "sequence": "GLWNPLIDFVIHWMHNFQHCDQRGRGQAYQKKFRLWWVVCRPTVWTLVEWQWPFEIMMDMMHTNRFNDCRFETWYSQDWFIFTTMNVEQQNCCV",
+      "molecular_weight_da": 20167.068533543774,
+      "theoretical_pi": 4.57426930878301,
+      "structure_type": "Fc-fusion",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.6810214003159517,
+        "stability_score": 0.07234644255072231,
+        "expression_level_mg_L": 438.5234217055784
+      }
+    },
+    {
+      "protein_id": "PRT-098",
+      "sequence": "NITYRQMLHIKLFECRCPPSDRSVPWCCGDMGSGVQGTDKSALWCPLVQYMENKCEQDPPYHNSALHHFMSEHHNNPPQPNDEFWQKFQFCKYAGHDWLTHWDVF",
+      "molecular_weight_da": 31506.45173680997,
+      "theoretical_pi": 8.780295201387585,
+      "structure_type": "VHH",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.9933505205692401,
+        "stability_score": 0.3710761279708482,
+        "expression_level_mg_L": 283.8053763316654
+      }
+    },
+    {
+      "protein_id": "PRT-099",
+      "sequence": "SHVRKGLMQTPCWIKTPMMEFDQMYHYTIKGPWRDAERVMSDPHWKSDEYPLSCERIQNQSPQTIITEMAETCQPRKDECIEQTNRYQFHVQRVRRFKMDDKHR",
+      "molecular_weight_da": 25860.642556452913,
+      "theoretical_pi": 9.0676048202032,
+      "structure_type": "Fab",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.22817739938740733,
+        "stability_score": 0.7650981388063106,
+        "expression_level_mg_L": 270.7543466755885
+      }
+    },
+    {
+      "protein_id": "PRT-100",
+      "sequence": "PLKFFRMWWAVSHARRGCTQAPEIAAEFRILAAERSTCFQAWSHFQGFYQCAATLMKYMSRCKACGPEDWMTEQGILMQPCDS",
+      "molecular_weight_da": 31403.70227249233,
+      "theoretical_pi": 9.380842676609475,
+      "structure_type": "IgG",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.4620467372002277,
+        "stability_score": 0.07892994980361945,
+        "expression_level_mg_L": 293.5606379743673
+      }
+    },
+    {
+      "protein_id": "PRT-101",
+      "sequence": "WLYKMMLSGVWPAANREWSCIIAYDNNCRDILLTKIMCMHDIQELNGHPDRDNTQFVFKKYHHYHCQGMQHAQATGMDLYCKFAFMSVLCS",
+      "molecular_weight_da": 33761.954668455,
+      "theoretical_pi": 6.449424013606567,
+      "structure_type": "VHH",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.42884340320711956,
+        "stability_score": 0.17453247587010834,
+        "expression_level_mg_L": 285.56073938608154
+      }
+    },
+    {
+      "protein_id": "PRT-102",
+      "sequence": "RYRWWWTCLMTKVPSIAEPVWAPQHLQLRISMVSKLYRNNTHTGFAIECDRWVLTNRELAHHNNYHSWSQQVIGWYRKPYWHCEDCWDYIGHYEYAIVHIVKQE",
+      "molecular_weight_da": 30745.97958526478,
+      "theoretical_pi": 8.567475185397615,
+      "structure_type": "VHH",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.2806289453463179,
+        "stability_score": 0.20955179831442117,
+        "expression_level_mg_L": 300.096386685723
+      }
+    },
+    {
+      "protein_id": "PRT-103",
+      "sequence": "IKFRHAEQDNIHQQIMESVHHWHQMETVGNQSLQMSAWSKCYPTAKYCGIDQYYNTTVYWLVEEPTHMMWTIRQNVQNGPAAQFYMNYGTLQLVCYWQCDVKLRPEAY",
+      "molecular_weight_da": 24009.200620944026,
+      "theoretical_pi": 4.97216229116853,
+      "structure_type": "Fab",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.8580482262427467,
+        "stability_score": 0.9348649445124985,
+        "expression_level_mg_L": 288.0427355312121
+      }
+    },
+    {
+      "protein_id": "PRT-104",
+      "sequence": "PWYSKGTRESETGVAEDIMYPGPDLCCIERRFMPRKYNNLRFLNECDVGEEIWNDERILWDCGTCWSHLFSMWEIWCKMYSLMKSHTMCLCYCIWRYWEAPMGDDFKH",
+      "molecular_weight_da": 27232.705817574388,
+      "theoretical_pi": 5.809090863602937,
+      "structure_type": "scFv",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.25895910214692464,
+        "stability_score": 0.00829647611401696,
+        "expression_level_mg_L": 51.01189054574308
+      }
+    },
+    {
+      "protein_id": "PRT-105",
+      "sequence": "SESFRPQACQCVEHKMFATHRVDGLEGVRELSNHTMHTDAYGHDAIQAAWIPVGPHLSMGPNHFGLAERQNHRFCGRMLDYRYVPTPNRCFFILACPP",
+      "molecular_weight_da": 23918.809521593543,
+      "theoretical_pi": 4.539025974307049,
+      "structure_type": "scFv",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.18244699264837383,
+        "stability_score": 0.3749538452289741,
+        "expression_level_mg_L": 492.0701926470731
+      }
+    },
+    {
+      "protein_id": "PRT-106",
+      "sequence": "RTYEDMLMCADWPFGHYETNDSNVEKGASFSEAVEDNREVSCHQQRSVDHCPGTIHLGPSGQQFQHDVMENIIPGGAHYRRAWTKHRQKVPALPAYDCTDMAMVPHTQQIFGLSNKDWHTYSSVRESCEVLYQCDMRLFL",
+      "molecular_weight_da": 31967.941737059016,
+      "theoretical_pi": 7.164644948091723,
+      "structure_type": "Fc-fusion",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.1333441143296249,
+        "stability_score": 0.3513002207821103,
+        "expression_level_mg_L": 208.24157645491886
+      }
+    },
+    {
+      "protein_id": "PRT-107",
+      "sequence": "HSIGEVTMEPPTAWSWDYWSNYVVREYLFCRDVDQCCPCGKSACRVVRATPFDHWPANPKPSNLSMWYDQMDKISWKWRNGRQIKAMASHGQWKTLVWMPTNEDLIRMCKIISQMSSKTQKEVGCPESQQFFMIYSDTHEKKHN",
+      "molecular_weight_da": 29030.361513568256,
+      "theoretical_pi": 5.360073285001643,
+      "structure_type": "Fab",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.8852123594272809,
+        "stability_score": 0.42934036569610134,
+        "expression_level_mg_L": 376.832837250742
+      }
+    },
+    {
+      "protein_id": "PRT-108",
+      "sequence": "SIQPYPWDQSRISERLMAYGSSAWQIVRTIRPWPLVHECYGFKLRRDTWDYPFMQKAVVMCYAMWAMMPGCSEGQCPMFEHFPLYAWFDQD",
+      "molecular_weight_da": 27363.259360607568,
+      "theoretical_pi": 7.070202619127602,
+      "structure_type": "VHH",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.6433291790947769,
+        "stability_score": 0.04375123768220923,
+        "expression_level_mg_L": 160.08490216718587
+      }
+    },
+    {
+      "protein_id": "PRT-109",
+      "sequence": "VRKERRRGQIVDILFKFMHSGQKRFKLNKRGKNWARNARIENTYQDTKWMGGSHVDSKGHFWMYSVPYNLFVHMHGAPDQRERGIFDPSDRF",
+      "molecular_weight_da": 26192.253785439694,
+      "theoretical_pi": 8.198686875029,
+      "structure_type": "scFv",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.10470205424451595,
+        "stability_score": 0.9939414561601843,
+        "expression_level_mg_L": 183.58609615321944
+      }
+    },
+    {
+      "protein_id": "PRT-110",
+      "sequence": "ADCVYMNCNQRQGNPLCQNETLPAMNFPPPDFEHWLFFSWGGDMMCPSHAWFTFTGQKAHHSLFPQTPGDERYMCGSDKACHCEKRMTL",
+      "molecular_weight_da": 21684.55788119354,
+      "theoretical_pi": 7.663568783786634,
+      "structure_type": "Fab",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.4830738703109865,
+        "stability_score": 0.3560047653397086,
+        "expression_level_mg_L": 104.4224570682718
+      }
+    },
+    {
+      "protein_id": "PRT-111",
+      "sequence": "LTNNYYGTFVFEPPMYHNHTGIGQGKHRPEGSYCIQTVKTNMPMMLDGCCSKSLQLWVYGLVYINPVCWTLLGWGAALDDACMNRSFKHAYFLQIMLAWKRPNPEYCVIFMELRIIFL",
+      "molecular_weight_da": 21841.226767577275,
+      "theoretical_pi": 6.543960176072592,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.19455646033239593,
+        "stability_score": 0.9327656593986225,
+        "expression_level_mg_L": 229.65408695246197
+      }
+    },
+    {
+      "protein_id": "PRT-112",
+      "sequence": "CIIRKQCDKRFVVAVNKCCELNWNVRNLGQHALWPQKMSTYQFFDKCAAAGSWNNTISFYPTKCMGSCISRACRRKHVEHPGSHHANTTKPFSGYKIGHFKCQIKDGQTIV",
+      "molecular_weight_da": 29243.21435076664,
+      "theoretical_pi": 6.260487632667256,
+      "structure_type": "IgG",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.7385610689991361,
+        "stability_score": 0.045843792159698915,
+        "expression_level_mg_L": 186.54575822538192
+      }
+    },
+    {
+      "protein_id": "PRT-113",
+      "sequence": "AWRLWDDECVESMSRMANPFHSLWYLGDNKMQKLLKNGQHIGFFGVLLDLWWTCVGQWQWLMPCEFAWWYDDAQDFPKTFKAWL",
+      "molecular_weight_da": 27221.628627839775,
+      "theoretical_pi": 6.530040518002682,
+      "structure_type": "IgG",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.11509556256795783,
+        "stability_score": 0.200528980017331,
+        "expression_level_mg_L": 193.63190902448375
+      }
+    },
+    {
+      "protein_id": "PRT-114",
+      "sequence": "NIHWRVEVVAKCIEWFDNIRAKMVQGRHTLHWMFQKTRHEDMLFCWRRDGHHWQTIGRLWRRGGQQLWCSEVILDILMHMYEPCDVLEDHAVMERSGSWYWFTPWGFTFSANFRGCWATHWIDYEKAFSRYMVLCMRRMRIEQEDCTS",
+      "molecular_weight_da": 30456.522376740977,
+      "theoretical_pi": 8.572269906249662,
+      "structure_type": "Fc-fusion",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.21692776006137693,
+        "stability_score": 0.44462332229118107,
+        "expression_level_mg_L": 442.80378170429964
+      }
+    },
+    {
+      "protein_id": "PRT-115",
+      "sequence": "DAIVQQVMNTNRGLFWGAPHCTLWCWQNQRKWPGINEHYAMEYWQQLLFSPVHQFTKRLSCQFEKYEIPKKRRTWKYFNNVKSTRMAFEWEENTKFVKLMETEYVVPCVEWTHGTVCKWNIETQAST",
+      "molecular_weight_da": 21007.66523752205,
+      "theoretical_pi": 9.315457806467403,
+      "structure_type": "VHH",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.05406364821890175,
+        "stability_score": 0.7750597627626176,
+        "expression_level_mg_L": 166.47712420597523
+      }
+    },
+    {
+      "protein_id": "PRT-116",
+      "sequence": "WGVQNAMCCWWWFRCNSQQHHRQIPDCARNQRDFNRIMKWDFMSTMGMNEPHQNTEYSGMHMKQWNEAVGYAIFQINICQGFTYASVNGTNHWYHCFGIGWFQNRWKQWSPHEASNEQPMN",
+      "molecular_weight_da": 22771.261650606037,
+      "theoretical_pi": 8.820263917998567,
+      "structure_type": "scFv",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.7003052827982595,
+        "stability_score": 0.10557741977048296,
+        "expression_level_mg_L": 388.4894436510791
+      }
+    },
+    {
+      "protein_id": "PRT-117",
+      "sequence": "ECTWMLFKQMPDMRSHMFSMIDRTAMHWPNNRYGGLKQKDLWEDKNAPGPDFYIAYSIADDYDPMNEKKWHRNTHVEAWPHANGAR",
+      "molecular_weight_da": 32273.319401783905,
+      "theoretical_pi": 6.269409067165794,
+      "structure_type": "Fab",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.46798233994988225,
+        "stability_score": 0.13761064432237113,
+        "expression_level_mg_L": 196.38490505174707
+      }
+    },
+    {
+      "protein_id": "PRT-118",
+      "sequence": "FPANRRDFNVGKYIGCTANLNAKYCRWEDRFRHWLTDFTYWVDMLITSCRLHALLIDGTGKCSTTKLCCCNDAHDRYPRWRSHRVQQCFFHGKRDIMYHDKEGQIMPHCCQESTANEWLIIVGT",
+      "molecular_weight_da": 24165.883304684743,
+      "theoretical_pi": 6.508676929105974,
+      "structure_type": "Fab",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.8145566906783068,
+        "stability_score": 0.4800225823561429,
+        "expression_level_mg_L": 218.91569518833458
+      }
+    },
+    {
+      "protein_id": "PRT-119",
+      "sequence": "VEEDVCIAKNNITTNDRCPPKPQYRGHNNWYLVYHLNDIFPMVNIRAMWHVVGVNLWPCRDDDQLPLMHGGHGVPYLPVSMIQSYIVGQMTGKWDYRDIGRDNYCDFQARNAKNQCNEKQFDAAWFHLGAWECGCEHYIFA",
+      "molecular_weight_da": 25551.078991265465,
+      "theoretical_pi": 5.128658508313217,
+      "structure_type": "Fab",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.30519158927018364,
+        "stability_score": 0.2115361787347243,
+        "expression_level_mg_L": 348.07440627220893
+      }
+    },
+    {
+      "protein_id": "PRT-120",
+      "sequence": "TCQLKQMVFGYKWCWFIPKNWAIALSAKEEIAMKSVIAFATRLQSPRSKGECQMPNYCVTYKYRYVSCPLDMSAYPPWVHFGALIKPQIQKADDMWWDLSCF",
+      "molecular_weight_da": 33376.95786637554,
+      "theoretical_pi": 7.607618406809465,
+      "structure_type": "Fab",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.7913691417965909,
+        "stability_score": 0.016211450685633788,
+        "expression_level_mg_L": 290.11268116674114
+      }
+    },
+    {
+      "protein_id": "PRT-121",
+      "sequence": "WRKSPHQPESQCQFHDKQCEEACAPAGFQMDWMARQHCELYQCQFFNHRVRVQNVLYTQYMQPWRYLRKWHIYQWGHKNVWFHVKIAHKNHNLHHSYSKTWDCRPYLLTPYMQYWHC",
+      "molecular_weight_da": 29370.781286884416,
+      "theoretical_pi": 5.368688205755773,
+      "structure_type": "VHH",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.7544176576269147,
+        "stability_score": 0.9568479953602292,
+        "expression_level_mg_L": 260.8195241839056
+      }
+    },
+    {
+      "protein_id": "PRT-122",
+      "sequence": "KNMQWGQHSEIHCDRLIIKGEFIPSIWWWTGQMYGRYKAPKTSWHMGNGVEPINYHQLHFWVDGRESKHGPISVIGYTTQMPT",
+      "molecular_weight_da": 24143.638981689146,
+      "theoretical_pi": 6.691081896827608,
+      "structure_type": "VHH",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.08958589296836328,
+        "stability_score": 0.6027597071276942,
+        "expression_level_mg_L": 151.12835844506213
+      }
+    },
+    {
+      "protein_id": "PRT-123",
+      "sequence": "GHCKTASVSIKYLCTDCQYHFWVTMMYYPFQHMFTDSLTDLMNLNQDVDWKMTQRPETYCVRAFLPMGMSWRCAKFHDYIRFDVCRLSPSLTTALPRYTLVLEK",
+      "molecular_weight_da": 24889.01515815682,
+      "theoretical_pi": 5.806766456258723,
+      "structure_type": "Fc-fusion",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.4648891989664147,
+        "stability_score": 0.7984193576040564,
+        "expression_level_mg_L": 90.81446947839146
+      }
+    },
+    {
+      "protein_id": "PRT-124",
+      "sequence": "ELVTEESPRMTATIGTLCAFKEIDHIGVYTYLEGANNYSTPFVWFWVQRFHGWINCWNWYIWQYIFDWLVPHKDHGGDVHGCTHWTLSKIEEENRCYPDPFPCGAFMDMYLYYYFDW",
+      "molecular_weight_da": 27051.939875220778,
+      "theoretical_pi": 5.585712970518818,
+      "structure_type": "Fab",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.26179465754514564,
+        "stability_score": 0.9406638297365478,
+        "expression_level_mg_L": 321.0175436863313
+      }
+    },
+    {
+      "protein_id": "PRT-125",
+      "sequence": "QFMCDINGYEMIQGWMVWIPAQLSKNCTSSKTGRYSLQKMQEGIITTSRPGSEVRDDNPENINWRWWLTKNTDIWLYMMTRYQGNAL",
+      "molecular_weight_da": 27464.032263847024,
+      "theoretical_pi": 4.773113921726138,
+      "structure_type": "IgG",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.8488632402962758,
+        "stability_score": 0.7412836407954568,
+        "expression_level_mg_L": 302.9875302911795
+      }
+    },
+    {
+      "protein_id": "PRT-126",
+      "sequence": "WPAHKWYLQSNPHALCSNFGRIQHAYMWDMWKYQETFLDILCPDVDARMKHCQEHNIKVHQCCIPRKEGHWFNKPGDHSKENRQHRDAVIQVHWATISIKPAYMHWCGDLEKFKSKYNNMFLNSVCEDAPYLF",
+      "molecular_weight_da": 31129.52269647092,
+      "theoretical_pi": 9.181426582527493,
+      "structure_type": "Fab",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.8121080100032267,
+        "stability_score": 0.3683049886868781,
+        "expression_level_mg_L": 445.95239251814735
+      }
+    },
+    {
+      "protein_id": "PRT-127",
+      "sequence": "IGEHGWEIENTAFFAHWVRMYLAWIKCVGPSWNDQGVGPLYAGENAQYKQQWYWPNFSIGYECQLTLLWGWARCMNMSKYKYDMLLFWNNWWNFKCQCGFMNAVNVRIQDHEWM",
+      "molecular_weight_da": 30990.536457464827,
+      "theoretical_pi": 7.387050043360357,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.9263039820425236,
+        "stability_score": 0.8838218399951501,
+        "expression_level_mg_L": 421.7243181798485
+      }
+    },
+    {
+      "protein_id": "PRT-128",
+      "sequence": "CNFYDAYINYHDNKSKGWWWKFPCFQSEEETETTGEIYRTWHFVGFNISIFQWHMHFMMKMNAYTVMIHDKGGVGDVWIWGMMKQPDDANKVLGMRVDWHCDTHLLCGLVSCYMFNVFTGCKEQGKVVTIHSAHNPHAFQ",
+      "molecular_weight_da": 20969.243474138955,
+      "theoretical_pi": 7.952396321376639,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.5808105917896406,
+        "stability_score": 0.24081813719874312,
+        "expression_level_mg_L": 372.56756269686105
+      }
+    },
+    {
+      "protein_id": "PRT-129",
+      "sequence": "SLIPGNMKMRYICQGSVGRYEPRMFVVTMELWNFYNRYYWIQCLWLPISLDMPRLSNMGPSPLQANFCPKYWQTDALAVRAMDQVQVQWFHTWELLNQNASMMSLHYH",
+      "molecular_weight_da": 21532.045722285988,
+      "theoretical_pi": 9.305658082332144,
+      "structure_type": "scFv",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.7281500883854065,
+        "stability_score": 0.672964673238935,
+        "expression_level_mg_L": 299.24495114793086
+      }
+    },
+    {
+      "protein_id": "PRT-130",
+      "sequence": "QFFEDTPMCFIKDRNLKQEFQLICQDTGRDFVEKNKMYQVMINNIGQYKQECYAGCRKFIDENAAYFQEKYTLYIVGSVTPFCHDWIKFSWPNASMQFDLMDGPVAKEG",
+      "molecular_weight_da": 20917.49467878765,
+      "theoretical_pi": 9.204119894521597,
+      "structure_type": "Fab",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.6574466763071268,
+        "stability_score": 0.8939258128903639,
+        "expression_level_mg_L": 465.19183485688774
+      }
+    },
+    {
+      "protein_id": "PRT-131",
+      "sequence": "RVDYPWCDGPDGWGDHYYKIIGAECDVTDSNQCLCVHFRTAPPPIHHNNMEQDLCCSWESYLQCSWDMFVWFNDSMRKDSWKPNYQLENEFCAQEVIVELNVR",
+      "molecular_weight_da": 23819.609098499823,
+      "theoretical_pi": 6.059700596401207,
+      "structure_type": "Fab",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.2570504147396011,
+        "stability_score": 0.029907117937903904,
+        "expression_level_mg_L": 368.48807352824997
+      }
+    },
+    {
+      "protein_id": "PRT-132",
+      "sequence": "LGDLICQCQNYCHRELTLTATNPQYAPNMTEAVTNDEACVAMCGRRPKNFIFRDQTCVIYPHNMQNSEIQGCVHCPDAFAVCQEITADCTAHKDNGPTMHGQRNRGGFQSCQRFLAFTWGRAIIDGAVQRMDD",
+      "molecular_weight_da": 27346.05004036923,
+      "theoretical_pi": 5.417339338575252,
+      "structure_type": "scFv",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.3977375345822869,
+        "stability_score": 0.4604514721642532,
+        "expression_level_mg_L": 69.67395194735828
+      }
+    },
+    {
+      "protein_id": "PRT-133",
+      "sequence": "THHQQQCQRKCSWTRLDFPVNDHSAQGRRVIHICEPFYPYYNKCGSQIVYRRSVQEYIYMDTNGRFVVMSSVKGGEKIKVFFAIVTKPVYTSQGPCIA",
+      "molecular_weight_da": 33158.1305511371,
+      "theoretical_pi": 4.909719103665408,
+      "structure_type": "Fc-fusion",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.5568454735619444,
+        "stability_score": 0.5675610502637549,
+        "expression_level_mg_L": 380.79176607982777
+      }
+    },
+    {
+      "protein_id": "PRT-134",
+      "sequence": "KPGKCGEMKKVQMGQKAEPWHSRVYTSKVPHFDQENAINKRPVPQKMVSIWVWTSTALWGWGETQKPSAARMWGCWFYECWWENQQQFLS",
+      "molecular_weight_da": 30787.768402967005,
+      "theoretical_pi": 6.514634660235803,
+      "structure_type": "VHH",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.9446878114103583,
+        "stability_score": 0.7674312147905147,
+        "expression_level_mg_L": 381.4295010790923
+      }
+    },
+    {
+      "protein_id": "PRT-135",
+      "sequence": "STQPQKVDADFPVQFNTPWFDDPLEDYMFQVMNHQGAKMHNHECAVFDTHGEQMHTLPRQMEIQAHVPERYYVMYIFFCHWTRTPSFPDYSQFEQNFQFGRFFTPKIKCCHAELEDLGNDT",
+      "molecular_weight_da": 24486.32702494884,
+      "theoretical_pi": 7.55256709929058,
+      "structure_type": "VHH",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.34422613101721666,
+        "stability_score": 0.06815600510228204,
+        "expression_level_mg_L": 114.90873287263494
+      }
+    },
+    {
+      "protein_id": "PRT-136",
+      "sequence": "PFWSHFMCVTKVNQVEHDWPEVVFLHFRNQYRNGSNWPTKRPPIIQSCFWMVRNKTSCVKDIMCMLEQDQGGFHSNNEMFAADQTMVKHFFHAQVLSKWWTTLRGGPSEVTLFSYQIDHRYEVQRFEKDGWYNLKMQAWENCKRYKKQL",
+      "molecular_weight_da": 20982.273386611294,
+      "theoretical_pi": 8.928482546039774,
+      "structure_type": "IgG",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.08278705668780495,
+        "stability_score": 0.26432489395972303,
+        "expression_level_mg_L": 499.22009799252186
+      }
+    },
+    {
+      "protein_id": "PRT-137",
+      "sequence": "PWPIWFWHQTAQCPYGQPTTDCWGKWSGQYQCSTAVGTNMSRRIKDMAQLEKGQQTTYYKYACGPMQQAEPHNETFHEYSIIEICEQWGPWYTENVNDEVLNRSIESSQEICETYCHRERPKY",
+      "molecular_weight_da": 24419.299273345572,
+      "theoretical_pi": 9.165139162434887,
+      "structure_type": "IgG",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.20590413745696345,
+        "stability_score": 0.8218591306340894,
+        "expression_level_mg_L": 439.90938242505524
+      }
+    },
+    {
+      "protein_id": "PRT-138",
+      "sequence": "AWTVLHLTQCPQEPPYLFVPPTDATPTFTNMSCGNTSQDQISKDEFRDMDTWFCVLKISEPQVLPMASVLDPAVTVAQVYRHPLDGLWEVRDMSYKFITT",
+      "molecular_weight_da": 21935.4255798258,
+      "theoretical_pi": 7.887142874014309,
+      "structure_type": "Fab",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.7262211756572995,
+        "stability_score": 0.5765983782228571,
+        "expression_level_mg_L": 122.31092017900883
+      }
+    },
+    {
+      "protein_id": "PRT-139",
+      "sequence": "DYLWEQRCMHILNESTLVFMKATWHTAFIFFSFIVYCWNYWRLTCPTNSVEWTCWMIAYVKSLVRHIDCGTTACMGSMEFCEIHMLQKYFGKSYPTCS",
+      "molecular_weight_da": 32851.40826822866,
+      "theoretical_pi": 7.374940754460249,
+      "structure_type": "scFv",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.8437496171534485,
+        "stability_score": 0.7910219174335736,
+        "expression_level_mg_L": 368.2973965555123
+      }
+    },
+    {
+      "protein_id": "PRT-140",
+      "sequence": "MLYWMFPYPYMKGCAVSCNAYDIMWEILLRVRSCHREWKAHLMDYKWICTMQQYPTYEEADFPICTATDNLLPNHPWALKVHLYAEIQWVNKTMPYIIVYQCQCVVDKHPKYEKCKMTHEDGTYFDHTTIRNELFLCCHS",
+      "molecular_weight_da": 27263.243756656153,
+      "theoretical_pi": 9.043727211641436,
+      "structure_type": "IgG",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.7552558348159426,
+        "stability_score": 0.964719055343756,
+        "expression_level_mg_L": 118.38236695321895
+      }
+    },
+    {
+      "protein_id": "PRT-141",
+      "sequence": "MYCACPVPRTVSMIINSFDKWQFSPYGTMHHCSVVANCRWDKIHVLQASWHKNPKLLLVFDGNLYIKISASNILYGFFAMENMKYLFFIVHQPSLCH",
+      "molecular_weight_da": 29016.995937401458,
+      "theoretical_pi": 9.21320607420486,
+      "structure_type": "Fc-fusion",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.028551085774917384,
+        "stability_score": 0.8927427142438161,
+        "expression_level_mg_L": 291.47860446120376
+      }
+    },
+    {
+      "protein_id": "PRT-142",
+      "sequence": "TNMPQTDCTVATVHKMWPPRYLWSMLIELHTSDTLTAFGTLTRLAHDQFDVMFWWLMCWQARVWVQEMVNYEIYCRIDQCTQSQDICPMNDSPFYPCCKEWAGLHTMHDWAWMMYTWFGGYRLSYFTYTQSFHGVGCEIERKAQSEDHV",
+      "molecular_weight_da": 26578.314472922786,
+      "theoretical_pi": 5.261280431917305,
+      "structure_type": "VHH",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.9050309709915014,
+        "stability_score": 0.42941079311599906,
+        "expression_level_mg_L": 372.77511718374103
+      }
+    },
+    {
+      "protein_id": "PRT-143",
+      "sequence": "NVTSEMIADLGQICKKDNEFFSYPKDYEAHQNKQPNLTQRTQYTTAFRKPSYHLCMEHKCVQPFHEGCVDNDIDNTPQAVMLKIVELEFYQKDGVCAWLENIGTVGVCWWCLLMHDNRRLYWNEGCQDQCPWKRM",
+      "molecular_weight_da": 20029.871415792528,
+      "theoretical_pi": 7.2646142723919604,
+      "structure_type": "IgG",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.8340296107902492,
+        "stability_score": 0.4148874998301445,
+        "expression_level_mg_L": 318.1240871969326
+      }
+    },
+    {
+      "protein_id": "PRT-144",
+      "sequence": "EMGAICYPWWVTMVIVCKMTNKPRRLEHMVLRDYDLPPFPMHPDLRFPSSWEYQEGYVLVIMDRDVYWDITPCICFIFWEPGQGSIHLTLTSYNWTCFAVFLRDLNQWGHNGITERTVHKFNDGGARVMHWDQMSRLKVNKNFMW",
+      "molecular_weight_da": 25298.433917885166,
+      "theoretical_pi": 6.0934198143451574,
+      "structure_type": "IgG",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.07572424372193265,
+        "stability_score": 0.7361404594796785,
+        "expression_level_mg_L": 98.317044826568
+      }
+    },
+    {
+      "protein_id": "PRT-145",
+      "sequence": "NSSQKEKTIWPTRLQCSSQHISEITHNERWWPIVLGPCRGLRNEQYHGGNIREGCPMGVAVNHWQGKGVEPHTTDQLKDLIFKMADIYYNIGGACWVQVNAIEHQFRWAGQDNFYL",
+      "molecular_weight_da": 24906.754604098798,
+      "theoretical_pi": 5.574382900167556,
+      "structure_type": "Fc-fusion",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.7822388122100389,
+        "stability_score": 0.20251228386988707,
+        "expression_level_mg_L": 361.6474313649226
+      }
+    },
+    {
+      "protein_id": "PRT-146",
+      "sequence": "VYRTGIETEREDHPNASGPYNMQHPMAEIAKTTCTWHVDPKIFHNHPMFWWMFGVHPTGSYCGLHPMTSHDLSLQPLWGHNPTGSRILLHARQTCQIEIAQMNLANGKGTYMNIVYQGGWIMQEVKSTHQAF",
+      "molecular_weight_da": 20273.198437272742,
+      "theoretical_pi": 8.233941893842463,
+      "structure_type": "VHH",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.13716310065068316,
+        "stability_score": 0.8807780404334374,
+        "expression_level_mg_L": 271.8505744969425
+      }
+    },
+    {
+      "protein_id": "PRT-147",
+      "sequence": "TDTHHHAAAFGIPSHNHKVKTKYFHVHPRNMWHPEMKPAEEMNNIFVREQQWTASMYMISETGYSLIVELHWEKTSPIHTETQSYNRLNGAWDEAGFCSLKHPHKQPPMDR",
+      "molecular_weight_da": 26569.96955230871,
+      "theoretical_pi": 5.49799485719146,
+      "structure_type": "Fab",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.6222034241723124,
+        "stability_score": 0.007665555041422745,
+        "expression_level_mg_L": 99.79234552894147
+      }
+    },
+    {
+      "protein_id": "PRT-148",
+      "sequence": "LGYLMFQMKAKDVPRGAYLVSPTCPGCNLDPKGAWDMAFDTVAEVTAQTGDNLHSRTTEYEAWWFCGFRANRFPLRGEDRDCDVICISRRDAAINCYYFETGEKIWVM",
+      "molecular_weight_da": 29386.64903150383,
+      "theoretical_pi": 5.046963555275951,
+      "structure_type": "IgG",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.07725274675168303,
+        "stability_score": 0.033482022910957476,
+        "expression_level_mg_L": 290.66939475392576
+      }
+    },
+    {
+      "protein_id": "PRT-149",
+      "sequence": "WTMLAGRTPVHPRYDYQMMCTQDYKWNVWAWPINNAIHFAEKIACLMRRMYTMRWTEVVDYPVCWALWHGQALPKIFFAMYNPLVQPKKKWSNMWAGHHTSP",
+      "molecular_weight_da": 23764.20066676407,
+      "theoretical_pi": 6.760329248441879,
+      "structure_type": "Fc-fusion",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.6491533078518253,
+        "stability_score": 0.8949731326154019,
+        "expression_level_mg_L": 383.2680047857419
+      }
+    },
+    {
+      "protein_id": "PRT-150",
+      "sequence": "WEEVGQTRYPGQWDGYFGYMPITCFKGEQRSFTWDQGKLPYFMKGLIWDYSRMKMFSWWAESHLSHVMSKEEHYWWFPAFAQFSARYNEWGAVPGERWCMCQDFPHQMVNTACYSPPT",
+      "molecular_weight_da": 22275.24111904743,
+      "theoretical_pi": 9.082560849614298,
+      "structure_type": "IgG",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.4514873878361233,
+        "stability_score": 0.8289198144945821,
+        "expression_level_mg_L": 389.0480977364741
+      }
+    },
+    {
+      "protein_id": "PRT-151",
+      "sequence": "CMYMKHGMMSKDQSDFMVFTPWGNWKHYMKEMCAWQVSPKTMETTVFGLVIWYVWFDQVSGPEGLIQLNDMFDTTPANRLEHHENAMQHCNFMMFADADKNDPREHYQRAEKNLTFAAVPFYDGHSADFKPSS",
+      "molecular_weight_da": 30597.54151199797,
+      "theoretical_pi": 6.780232769869828,
+      "structure_type": "VHH",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.34822572853046063,
+        "stability_score": 0.592472049010447,
+        "expression_level_mg_L": 59.462144131837604
+      }
+    },
+    {
+      "protein_id": "PRT-152",
+      "sequence": "CRFVDSTCAASMTCTRGPWIFLKDPWYYLCGMKGGQTWWWCDDYIEETYFDNNVSQWNEVWWNYYQWHFWEALVDQFPPRYSHYWQYT",
+      "molecular_weight_da": 21224.484263069247,
+      "theoretical_pi": 8.226872151266239,
+      "structure_type": "Fc-fusion",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.007676379899019925,
+        "stability_score": 0.10442781703073345,
+        "expression_level_mg_L": 446.5273313011862
+      }
+    },
+    {
+      "protein_id": "PRT-153",
+      "sequence": "EGNEECITQQPEMNLTIHDWGDPTVWEPKAQEGKADITAEKFESQICWVTAFFWKAYKLPPECWYFWFQKCKMSQHKDLHSRQSPYRGYKMQFGLNWQHCAMPVFHMPKQFEHDMMKTNTFPWRDSQIPCWYDCRYIGCQLE",
+      "molecular_weight_da": 30709.77008836538,
+      "theoretical_pi": 5.774468087328238,
+      "structure_type": "Fab",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.9835285182385635,
+        "stability_score": 0.563989891323183,
+        "expression_level_mg_L": 484.3206355971197
+      }
+    },
+    {
+      "protein_id": "PRT-154",
+      "sequence": "SLYPIMYYGQFKAIIWPLVEYFCQALLWRCRLFVDQYGSWVMIRNLTRLADACEGLNNYMKGKTSEAEEMHCLRIKFVHMHVPMRQNSNHFDCCNSICIDDWPKV",
+      "molecular_weight_da": 33385.94625942721,
+      "theoretical_pi": 8.89423775269801,
+      "structure_type": "Fc-fusion",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.2691156605926306,
+        "stability_score": 0.9480907592050096,
+        "expression_level_mg_L": 187.20034671319576
+      }
+    },
+    {
+      "protein_id": "PRT-155",
+      "sequence": "CIQQWYYASAAWNLYHWGFKGHIWGKRIYVMHLQKRFKEMAVVSKYYRHWFKKIGMTQKKSCGTMDVLLSWMYNVGDPIQPWQYKCESLHQMVENLEKHQPLMHGTPMPARVCTEPHWKAFRLQYKQAKFDWRSYINHQQCADHVDGQ",
+      "molecular_weight_da": 25158.477600819566,
+      "theoretical_pi": 8.435827646940508,
+      "structure_type": "Fc-fusion",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.13317959858920692,
+        "stability_score": 0.3193498713720968,
+        "expression_level_mg_L": 406.87788620071973
+      }
+    },
+    {
+      "protein_id": "PRT-156",
+      "sequence": "DCPHADTSQYMIPVPWCWRTYYFVRVHTPDHREWVFRTCAIRHETMARIRWLGRAYHMCDGYYGGSRLIKVHMRIEGITTGVDIRVTEEMGHLPDPQHFMPFCRLVHWFYLPMQKTNLGY",
+      "molecular_weight_da": 20404.895793091688,
+      "theoretical_pi": 9.032128858125038,
+      "structure_type": "Fab",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.16550328417203197,
+        "stability_score": 0.5043583421923052,
+        "expression_level_mg_L": 247.1021567640351
+      }
+    },
+    {
+      "protein_id": "PRT-157",
+      "sequence": "SCMGWESKRTIRPWLLSFKGDGGINPRTQDHDIDDYMMGKWQSVVIDQQYYPLCGSLKWNCEAAYMWHSHHSSWNTGYNLGHHDANNNPN",
+      "molecular_weight_da": 29286.165035070597,
+      "theoretical_pi": 5.142701332510288,
+      "structure_type": "IgG",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.10710506999809755,
+        "stability_score": 0.43323036985978236,
+        "expression_level_mg_L": 60.695531983824715
+      }
+    },
+    {
+      "protein_id": "PRT-158",
+      "sequence": "VWSVCGLRGKANMKQTCHAFWDQDHAEMLLATTMKIISVMMWPGDICTFQADMHDVRQHVFGHIAWDDVMNPLLFGKFEGIS",
+      "molecular_weight_da": 30551.25436665681,
+      "theoretical_pi": 5.733382621416798,
+      "structure_type": "VHH",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.10317361680342774,
+        "stability_score": 0.9875253836964966,
+        "expression_level_mg_L": 488.0944524039864
+      }
+    },
+    {
+      "protein_id": "PRT-159",
+      "sequence": "RQAKLLADFYEMTAHNSIMESMRILCVEGMTWGPTCTCWDSGLDEWAWCSVLTHNKIACHITIAYTETMVITAFFALAEMPIGKGRPPQEERGNPVTVRKTLCQWTTPGWDSFIVR",
+      "molecular_weight_da": 33735.185275351534,
+      "theoretical_pi": 7.8343079285866395,
+      "structure_type": "VHH",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.13088137871118244,
+        "stability_score": 0.14862937022348766,
+        "expression_level_mg_L": 466.0585701746049
+      }
+    },
+    {
+      "protein_id": "PRT-160",
+      "sequence": "YNIDSPYIQCPDAEQALHGNSIIVMPYHSDRCCEHHPHAVCMGREETKIEVERHMKKDDHDKFKGFAHKMTKHTTEDDNWYSAMYKINRCCSTGDVNWALLNW",
+      "molecular_weight_da": 22986.22732612138,
+      "theoretical_pi": 8.213097644613011,
+      "structure_type": "VHH",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.6782106140214202,
+        "stability_score": 0.12687399242614927,
+        "expression_level_mg_L": 179.78211971855202
+      }
+    },
+    {
+      "protein_id": "PRT-161",
+      "sequence": "IDHFMCEGWDRASIPYDHQTHRWYQVVNRVADRGIEEKQDNDPNIALHPLCCDPAFKCLCQLQPLGMIHWWFTYSEHHFHFQIMPTCFNSQMIGANA",
+      "molecular_weight_da": 21543.105209943154,
+      "theoretical_pi": 6.535404949325129,
+      "structure_type": "IgG",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.15409477996057563,
+        "stability_score": 0.45981871268079044,
+        "expression_level_mg_L": 165.6146499086381
+      }
+    },
+    {
+      "protein_id": "PRT-162",
+      "sequence": "YKFKNSGDEASNMYDYPCRCMALIYVLKMSHDACHCNDVPNWDSEIYVSRTNEDAEDTIKYHKWHVCDWWNPNEVLCMRACSWFGRCYRFKFMLNVKATVKYAQPLEGEIWNCIRPWNMWSNAIETHNIGFLTDC",
+      "molecular_weight_da": 31515.288412078648,
+      "theoretical_pi": 6.933515655575914,
+      "structure_type": "scFv",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.6930279882396737,
+        "stability_score": 0.005298698778338107,
+        "expression_level_mg_L": 368.5206916776552
+      }
+    },
+    {
+      "protein_id": "PRT-163",
+      "sequence": "HQNYVRVTATFPEWHWCRPPKEISKHVEFQSDPGYQTPAELQAALEQKMKCWVPDAFTIRPWHESAPICYQGNNEQRVNFFFDYDPCINPITVGGGEVRDNPHHGERCRWSVMFNWPAFEL",
+      "molecular_weight_da": 34581.46513863336,
+      "theoretical_pi": 8.67478319000522,
+      "structure_type": "scFv",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.9058546844861083,
+        "stability_score": 0.1569382553092058,
+        "expression_level_mg_L": 231.08341240667258
+      }
+    },
+    {
+      "protein_id": "PRT-164",
+      "sequence": "YNLYTDRLYCWHYGNWHLIFTKYPSANSRDNSDHPKMWDCIHGTMNHFVHEATCQCMTFVHQSAVNGHVQLWEDDPGQAEKKWREFKQTHNKCAFDTIQHEHPTPSLIEPTCCLGFIGIAYMHWYLVEWVEICMTERFHYKVRWSQHQ",
+      "molecular_weight_da": 22821.284652259248,
+      "theoretical_pi": 7.400118415700419,
+      "structure_type": "Fc-fusion",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.9617898238825798,
+        "stability_score": 0.9973095693105184,
+        "expression_level_mg_L": 313.160037426601
+      }
+    },
+    {
+      "protein_id": "PRT-165",
+      "sequence": "MMDHVQQIDGYCAQQLWSRYNIGVCTKSRDGAKCVCNLYHLMDGRVNVQQYQYFRYDQRLPILYGMQPRQEFVFTEPTQCRRRVFTEPPLVYAFKGQRYTSRNQVCMNMLALYKSANLQT",
+      "molecular_weight_da": 21803.639905772347,
+      "theoretical_pi": 8.005628734261425,
+      "structure_type": "Fab",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.4770643485729691,
+        "stability_score": 0.9386493061439162,
+        "expression_level_mg_L": 327.0809796011488
+      }
+    },
+    {
+      "protein_id": "PRT-166",
+      "sequence": "HGAIGDWADNGMTSIIIKWFYESEKMQQVLKQGQIELIFYMAKDQTTVYYEWAKRKAEFPQLQMQTHQRSCYDGMHFTIELVRTKYNFNYDTQANRTQKADQG",
+      "molecular_weight_da": 20373.080538091275,
+      "theoretical_pi": 8.014787153659817,
+      "structure_type": "IgG",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.44088492761975373,
+        "stability_score": 0.557745309849093,
+        "expression_level_mg_L": 56.80461266845363
+      }
+    },
+    {
+      "protein_id": "PRT-167",
+      "sequence": "DPYIHAFWVPMKWTQGWQSWNMKMRFLMRVQNDNSWPYEDELCKQTCFLSGEIQKWHQWLHNMDLIHYKNCVCLQKPQIWIPTPSNRRNGVCKPEFAYEYCCWKEHTNPSQRTQYFYTCIWYGNIRNYHDQDPHKWKTIFITQQNVSMDW",
+      "molecular_weight_da": 28895.312889532084,
+      "theoretical_pi": 9.273239951075709,
+      "structure_type": "Fab",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.6074712658523833,
+        "stability_score": 0.5529153397525243,
+        "expression_level_mg_L": 376.98802275213103
+      }
+    },
+    {
+      "protein_id": "PRT-168",
+      "sequence": "FKGHDHNQMKYPHFNYTWPYPRCYREASCKYMAFTIVIGIFGSNWTYYCDRNPATQPTAVDSDASMADRGHQWYNDDDCSWIICPPQK",
+      "molecular_weight_da": 29759.075516874982,
+      "theoretical_pi": 5.590974262114784,
+      "structure_type": "scFv",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.81812466631339,
+        "stability_score": 0.18333510263356279,
+        "expression_level_mg_L": 78.00816303307897
+      }
+    },
+    {
+      "protein_id": "PRT-169",
+      "sequence": "CGKCSFKTEGDCNTNQCYQIGCEHPNGQGANWMYEIGNMYHTMCTWYCFWFCLTACAATKYHNVNYKHAVTDDFFRCFTRKTFSPAETVPMWI",
+      "molecular_weight_da": 22368.453451867455,
+      "theoretical_pi": 6.735359059501666,
+      "structure_type": "scFv",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.33867446499064346,
+        "stability_score": 0.908575391070898,
+        "expression_level_mg_L": 254.81668152419638
+      }
+    },
+    {
+      "protein_id": "PRT-170",
+      "sequence": "FPEKHHWMVFMCRYPPRRGLNVMRMAAHKSHIKQSEILQCRTSNEVELSYPGRIITSEPMTLWNHTFEYQLWVTVDAPEGANDIQVWQRKVIIMRNQEVILSTTRCAYNLRT",
+      "molecular_weight_da": 21141.15518292673,
+      "theoretical_pi": 5.434020612236334,
+      "structure_type": "Fab",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.9175880816254016,
+        "stability_score": 0.8957617611607798,
+        "expression_level_mg_L": 494.7538501597864
+      }
+    },
+    {
+      "protein_id": "PRT-171",
+      "sequence": "QPDSWAKVHETDFAWTWSLVKAGQQDFCITQLRPQKYNGLYRIMIHHMLRYKLATGFMKRQFLKDSWAMPIQDKDIYYRLRMVSTS",
+      "molecular_weight_da": 26264.86996743987,
+      "theoretical_pi": 6.555159983158503,
+      "structure_type": "scFv",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.7276010041035568,
+        "stability_score": 0.26571098460105314,
+        "expression_level_mg_L": 237.40080393850064
+      }
+    },
+    {
+      "protein_id": "PRT-172",
+      "sequence": "NNFNSHSKKINHYWGFIFNLTWDWLFWCFFVTVHGFQYHTWNSHTPWVATQCFHDWDTWCAKCPVDKFMKFMGMGCVLRFELMFMCIMKGIEQWLTRDLHYVGSGHISLLLPWHSLFLKTHNRE",
+      "molecular_weight_da": 30061.3879379698,
+      "theoretical_pi": 5.778056363513317,
+      "structure_type": "Fab",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.8614033220555758,
+        "stability_score": 0.013404469042891942,
+        "expression_level_mg_L": 477.80894051274686
+      }
+    },
+    {
+      "protein_id": "PRT-173",
+      "sequence": "MLAFNEWDIMCPIPDLSSWQNTDQLHQGKLCGHQNEPQMRKTEKWWLGITHRVKDPFSNTYCWDTCYVFTLKTEYFLMFWRMCPGQWTKHAEAYRAVGAKTAPRIAQCESHDSECEKTLEAGNGFIGQKDEVYKGREMHMCCIVFPRQPK",
+      "molecular_weight_da": 32347.248529878623,
+      "theoretical_pi": 8.011228191720633,
+      "structure_type": "Fc-fusion",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.8467116271152307,
+        "stability_score": 0.5039869606560335,
+        "expression_level_mg_L": 496.4981278987222
+      }
+    },
+    {
+      "protein_id": "PRT-174",
+      "sequence": "YHKSHWDHVDWNVSWHPLGMSICEYLEKEMRWNGYDAADQLRRLRDDYFVPHQDVYLSDQDMGNIWCNRLLRHIRNSMELRVIQYMYCYMWMQCHPRHKDGDVHENAAMAWRFIAADCTYEFWYDGKEMFNARRWPNVIHTPMWIH",
+      "molecular_weight_da": 22260.71946593579,
+      "theoretical_pi": 8.252881862975485,
+      "structure_type": "scFv",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.8089917496875618,
+        "stability_score": 0.46996382826411387,
+        "expression_level_mg_L": 486.14426761484435
+      }
+    },
+    {
+      "protein_id": "PRT-175",
+      "sequence": "TSIMRMSIAMQWDEDTEWQSVVNEVAYGQIHQCMEYKGIEKPMNHIWLYSPEQHYFALEFDPIATMGLWKRCLWVLFGLLTMTIGQEPEIICPAYLPQTVNACFNNYMPRTALRCYGVSICRTM",
+      "molecular_weight_da": 30658.507416891553,
+      "theoretical_pi": 6.132804141909618,
+      "structure_type": "Fc-fusion",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.6887104841253789,
+        "stability_score": 0.48826088555201264,
+        "expression_level_mg_L": 115.1877620680569
+      }
+    },
+    {
+      "protein_id": "PRT-176",
+      "sequence": "FQMEPKGASYQHRTHEYAKFCMRLKHQYRNQFMITLLNGMARCWPAMCEICGKVNNNWSCFWDSQEIWYEHSMYEEHSLG",
+      "molecular_weight_da": 20886.96984956388,
+      "theoretical_pi": 6.760059341340134,
+      "structure_type": "Fab",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.08623070580699277,
+        "stability_score": 0.12851864336878605,
+        "expression_level_mg_L": 489.19459195820116
+      }
+    },
+    {
+      "protein_id": "PRT-177",
+      "sequence": "SMKYGAQHMAEVKFALWTDNNCLMRLQNICPGTDKKQHEKRWASYMYFCDLSIGGWFICWMCVPCWHLSLLRNTCWLMPRWILWCDQAQEYQNDMARTGQTEGWDYYIYFK",
+      "molecular_weight_da": 30954.580282658182,
+      "theoretical_pi": 8.45940292189201,
+      "structure_type": "scFv",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.18728753331681203,
+        "stability_score": 0.49869945610771327,
+        "expression_level_mg_L": 162.32236150254647
+      }
+    },
+    {
+      "protein_id": "PRT-178",
+      "sequence": "WELRARVIRLSCYHPIPYSACGWTMMRGVQCIKMPHPFCCNSFIPKEHSRHTLLAGCHCRWAMMMVEMKMCISQVWPNCFCIVWRARRFNQTELQNAPFKQYLFGIFITH",
+      "molecular_weight_da": 28663.58187216161,
+      "theoretical_pi": 7.973567630069687,
+      "structure_type": "IgG",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.6619795528392777,
+        "stability_score": 0.8153126935502802,
+        "expression_level_mg_L": 176.31412806566175
+      }
+    },
+    {
+      "protein_id": "PRT-179",
+      "sequence": "QDQQRYWPVRPHPGGSDHYQTHGICLATNKCHIKPMHAACQNQQRMHMFLMKQSYLDICARVCPMWKVSPKAQLPCNGCEMAPSAEVWTKHNFFWVWHKRHHTWYWGPCDFHNGDGEACLTRV",
+      "molecular_weight_da": 27853.68523864724,
+      "theoretical_pi": 5.1167616026329386,
+      "structure_type": "scFv",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.5609532975068161,
+        "stability_score": 0.773136783286466,
+        "expression_level_mg_L": 465.7087031634133
+      }
+    },
+    {
+      "protein_id": "PRT-180",
+      "sequence": "AQCCTRNNEGDHYKYYQECNRNASWWCCSMMYYCNQAKITHYSCKSKDCCHHRAEEMEFRTFWVYCLEMGRHFLNPLGLSNMDAELMLESLCYKFIIFNCINAQHNDYSHGHYGFSRVEFWAMYEDKFRSMKIDWFDLN",
+      "molecular_weight_da": 21540.15060679985,
+      "theoretical_pi": 6.117219367776084,
+      "structure_type": "IgG",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.5617773532377262,
+        "stability_score": 0.8445667116327726,
+        "expression_level_mg_L": 367.36833830656303
+      }
+    },
+    {
+      "protein_id": "PRT-181",
+      "sequence": "KQKDCTEHHDQCAVGGVDKEKQTYAKNPDHSTGIKVGGHSYCGRLLVKVIKQKFELPIGSPLLQNDNVWDYADCEAYQEVHHDWELPK",
+      "molecular_weight_da": 33033.521477867485,
+      "theoretical_pi": 7.367863228889611,
+      "structure_type": "VHH",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.7746615485118845,
+        "stability_score": 0.21175460090908038,
+        "expression_level_mg_L": 118.30543528776238
+      }
+    },
+    {
+      "protein_id": "PRT-182",
+      "sequence": "DHSWNYRDRAKSNYYVTFDLMANFVILGMHMVMVPKNSTQWCQSSNEEECGDHKSMDEEHCYPMNEDFDGHKFSSEKLGQRHSHHDCAVMDGYSFNPKRRVELFTMEFSELQNYNWICMTNIMLTLRHFPQVPGYPQAP",
+      "molecular_weight_da": 25708.249455988454,
+      "theoretical_pi": 4.782279507071935,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.17431728185060946,
+        "stability_score": 0.197726842259218,
+        "expression_level_mg_L": 86.99649043752505
+      }
+    },
+    {
+      "protein_id": "PRT-183",
+      "sequence": "SGKRCFMLRDTTHVDKKAMNLPQFAFQSWYTCSYSSSTNNEWLCVRFTDKCQPLRTFSPIYRYTIPNELGHNPQIDMNENHTTKWVEKSECG",
+      "molecular_weight_da": 22926.046168393885,
+      "theoretical_pi": 7.697035201552325,
+      "structure_type": "VHH",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.5153354908101233,
+        "stability_score": 0.697686598605221,
+        "expression_level_mg_L": 304.73916586931125
+      }
+    },
+    {
+      "protein_id": "PRT-184",
+      "sequence": "QMMWAGGVASQHFHYMFILYTQWYDSFPKIERCLLRQVSGADQLYDDNRARYWQWNQDVMKVNHAFLHYYHRQNYYCSMRCRQRMCKEMFRKALDKAS",
+      "molecular_weight_da": 28395.70510176145,
+      "theoretical_pi": 7.236904021197833,
+      "structure_type": "VHH",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.2901045705452091,
+        "stability_score": 0.6413482430718953,
+        "expression_level_mg_L": 403.2056876784664
+      }
+    },
+    {
+      "protein_id": "PRT-185",
+      "sequence": "HTKDMCVKQADALNVELRCSKGHLIYGFIKDYLTWSQCRWAKTVFTWSHARWLCEIDQFQLNNYPYHFCDGGSEEGLGLCMPVWNCWRKHFIDQNTPQIHHHWEKVEFYMRTQIRHGIGIPLNTSDGPHHIRKAELEATWHRSRAI",
+      "molecular_weight_da": 33501.14934782982,
+      "theoretical_pi": 5.073064701769972,
+      "structure_type": "Fc-fusion",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.35250752157567833,
+        "stability_score": 0.8817769057692537,
+        "expression_level_mg_L": 341.81255922494194
+      }
+    },
+    {
+      "protein_id": "PRT-186",
+      "sequence": "SQFSVWRSRTSVERRFASVPTWMQLDPCLKDHEYVGEMTPMLKHIKLVHYTREACWHRYDNHAPAVTEEVCDMEVFCLDVTRN",
+      "molecular_weight_da": 27249.471123507043,
+      "theoretical_pi": 6.4071309517722765,
+      "structure_type": "VHH",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.01741172765705179,
+        "stability_score": 0.2367554828405788,
+        "expression_level_mg_L": 96.20672454301777
+      }
+    },
+    {
+      "protein_id": "PRT-187",
+      "sequence": "WEFGHRLVRMDTMDMTKWLHVIWATWMQPWQNHFNEKMAAENWMPPMKYVIDPQTVTAAITFNAIGAFHNGTWMQWYRTLYNRQTNRDSDFTCTGDQLDPQGWFHKNWLIG",
+      "molecular_weight_da": 26383.835735845772,
+      "theoretical_pi": 8.090910270251593,
+      "structure_type": "Fab",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.41314311460808384,
+        "stability_score": 0.776591004829114,
+        "expression_level_mg_L": 215.14146691907723
+      }
+    },
+    {
+      "protein_id": "PRT-188",
+      "sequence": "SVEFRLWNSMVFKSYKECRDAVGYQDVMQLPNSNPTCEGGYAHETPVRVDSRVDVFLSWMSTIMEENFCMTDDEQIFTHCCLEMTPTHESFYNPEAKLAFVMCTTVSHHLVHRWWEPWCHCRTDFEKSHDSSISSWGENICVHMWC",
+      "molecular_weight_da": 24833.755273289866,
+      "theoretical_pi": 6.148708403517956,
+      "structure_type": "IgG",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.7819593257027009,
+        "stability_score": 0.9510945239023235,
+        "expression_level_mg_L": 248.55614481405073
+      }
+    },
+    {
+      "protein_id": "PRT-189",
+      "sequence": "VLCRYMGFDEIGVKEDDRKSFFTWIKEIGTSWCTRWQGANTCTVITALRMMEEHGANNTFWHDDMNPQPDFQKHEKVTWGWQDPYAVEYQHVWT",
+      "molecular_weight_da": 30001.984570775505,
+      "theoretical_pi": 8.257513349127892,
+      "structure_type": "scFv",
+      "target": "HER2",
+      "developability_metrics": {
+        "aggregation_score": 0.3665709514695741,
+        "stability_score": 0.6458289767861374,
+        "expression_level_mg_L": 410.86391979840135
+      }
+    },
+    {
+      "protein_id": "PRT-190",
+      "sequence": "SITECHFNQDVFPLWHDIRMVNVGRTIGGKVHQVFKPYYVVFQRTLFEEFSSWQKMRRDVMQVKFWAVTPHFMFYGETMPLWTWKSNLFETDMWSNFGEFNHTISPFANPHIPYAMLELDNFENEALDYWFWYHPDMF",
+      "molecular_weight_da": 31119.40436400058,
+      "theoretical_pi": 6.070576072529786,
+      "structure_type": "scFv",
+      "target": "BCMA",
+      "developability_metrics": {
+        "aggregation_score": 0.3238626323070126,
+        "stability_score": 0.6230155969581452,
+        "expression_level_mg_L": 201.10483529319907
+      }
+    },
+    {
+      "protein_id": "PRT-191",
+      "sequence": "HPSKTRIRWEPFPIEKFAQGAYARVANATYRQCQEKIYTFEAACQWHQVGQNMPTEQPMVGMNEAHGVSEVCLHKKYWVHEETFCKAFGCNQIK",
+      "molecular_weight_da": 34243.54796127362,
+      "theoretical_pi": 7.031713204880974,
+      "structure_type": "Fab",
+      "target": "VEGF",
+      "developability_metrics": {
+        "aggregation_score": 0.24698422922600227,
+        "stability_score": 0.5786694442680071,
+        "expression_level_mg_L": 156.67092948189827
+      }
+    },
+    {
+      "protein_id": "PRT-192",
+      "sequence": "DDMKARDQDYNFCNFISEMLQSWLHSVWMANDTNRNVVQLSQVEAQAWTWETDPFLKDHIDHYMFYCVQNSQTTEDRIWVLHGDHNYFNHVQRNNGYMCLIMDSWHVCGPKE",
+      "molecular_weight_da": 24993.084248577627,
+      "theoretical_pi": 8.630612090383654,
+      "structure_type": "Fc-fusion",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.8257760434713026,
+        "stability_score": 0.8374314417557692,
+        "expression_level_mg_L": 486.8443868097157
+      }
+    },
+    {
+      "protein_id": "PRT-193",
+      "sequence": "MEVAEVFVSQEHSGVDQAGISKIERWGTQMAGFATLINTWIHADPQSMPTSGRNYVWRWTMNTKIMGYFMCWELWCMHCIYPG",
+      "molecular_weight_da": 22361.03178552658,
+      "theoretical_pi": 9.124121585751258,
+      "structure_type": "Fc-fusion",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.651033144510863,
+        "stability_score": 0.9438013081385862,
+        "expression_level_mg_L": 347.03556885408534
+      }
+    },
+    {
+      "protein_id": "PRT-194",
+      "sequence": "SMRTFASSRLCHTPGGDRFYDVHVKRWPMWAFPSFIYGQRHTQFGTCKANTIVVTNCWNVAWVPDCIPACEKCPRFLHTIYYMWHHSYFCPKNPHQTCVR",
+      "molecular_weight_da": 22281.670461183723,
+      "theoretical_pi": 7.000316171613748,
+      "structure_type": "Fc-fusion",
+      "target": "IL-6",
+      "developability_metrics": {
+        "aggregation_score": 0.6844469350932767,
+        "stability_score": 0.054553436577275405,
+        "expression_level_mg_L": 108.7261001947946
+      }
+    },
+    {
+      "protein_id": "PRT-195",
+      "sequence": "WGHRLFELKMTQFVQILTPVGNFIQCTIKVFCDVMRTLWWPWVNKLQGDEQKTYPWKGAKFMMWVLDRALLCHWDQARYKEHHMFKFEGRPRDPQTLPFAGYMTPIKKRYSVPYQH",
+      "molecular_weight_da": 22029.46594129067,
+      "theoretical_pi": 5.670540105191625,
+      "structure_type": "scFv",
+      "target": "PD1",
+      "developability_metrics": {
+        "aggregation_score": 0.8077045120079316,
+        "stability_score": 0.7708865163215015,
+        "expression_level_mg_L": 139.89233385855337
+      }
+    },
+    {
+      "protein_id": "PRT-196",
+      "sequence": "WTKAHIKSEQFGQQPDMFEVRYERQWIWFYTHRCESSPWKIYKWVYHQVPDPQAKHDESTREKGDCFWFPHHITAGYQLPWAFVKPTFNSRFMKVNLPEVVEGMQNCKCSWSMPSMHVHLEHCNLRNMIQDSGDVKEHGTPH",
+      "molecular_weight_da": 33512.6111538414,
+      "theoretical_pi": 5.756534282180553,
+      "structure_type": "VHH",
+      "target": "CD20",
+      "developability_metrics": {
+        "aggregation_score": 0.067389039658451,
+        "stability_score": 0.2213694653132966,
+        "expression_level_mg_L": 479.938639445375
+      }
+    },
+    {
+      "protein_id": "PRT-197",
+      "sequence": "NYRQITIDTSYCRRPSQHFKKLNRIDAGSTGHDHLYYEANHCQMAFALQNWPYPPHRIQNGIWQNDVNWPWIAATMPLIFTSLCGSFCYEREDWSDIDWNTHIT",
+      "molecular_weight_da": 23123.595390128343,
+      "theoretical_pi": 5.864545305573216,
+      "structure_type": "IgG",
+      "target": "EGFR",
+      "developability_metrics": {
+        "aggregation_score": 0.9124447144777387,
+        "stability_score": 0.5353446235103154,
+        "expression_level_mg_L": 132.99729078927217
+      }
+    },
+    {
+      "protein_id": "PRT-198",
+      "sequence": "GWLPHIVRECWVWWRHSEGFCMQVWYMRDMALYHRSDGKYTIEHQTRASAHQKWDSGWDYDMHNMNEKKIHWMAFQYKMAHTNRVEHEQYSPVPV",
+      "molecular_weight_da": 32378.607582565128,
+      "theoretical_pi": 7.753463894068222,
+      "structure_type": "scFv",
+      "target": "TNF-alpha",
+      "developability_metrics": {
+        "aggregation_score": 0.7465981820219872,
+        "stability_score": 0.6814445579413015,
+        "expression_level_mg_L": 152.1500046555144
+      }
+    },
+    {
+      "protein_id": "PRT-199",
+      "sequence": "GALEMTHPDMMDVWCQVHAEPKGVMSGEAGIILIRTSAYNQMSVEYYKSSWGIMDRPLQYLMYRMGRITGNVGSWELYGPHTRTAVATSELHSGRRDHDKGEPFIYEPVGIKIWYSVCCFRPNRISMAAWYGSFNAKACSQGV",
+      "molecular_weight_da": 23432.661846487827,
+      "theoretical_pi": 8.51930916101568,
+      "structure_type": "Fc-fusion",
+      "target": "CD19",
+      "developability_metrics": {
+        "aggregation_score": 0.2376262284823456,
+        "stability_score": 0.8949784791768264,
+        "expression_level_mg_L": 246.12833692248577
+      }
+    },
+    {
+      "protein_id": "PRT-200",
+      "sequence": "YNVRCFPQCSWYAGYHYNQCVDQTKCTTIQMNTLLADCIDRGPTNNMNPLRRSVDVWMGSVAITKTHLNTQPESCHCSVCLHKCAIMHMGLHKYESSFWQRTGGYTVHVQSMKNHATTHCNGCWEGQSDCCEHRSVCFMGPQLMRQK",
+      "molecular_weight_da": 28657.66306336128,
+      "theoretical_pi": 5.012108802846885,
+      "structure_type": "VHH",
+      "target": "CD3",
+      "developability_metrics": {
+        "aggregation_score": 0.7808524087837941,
+        "stability_score": 0.9360722173117298,
+        "expression_level_mg_L": 318.11776902364085
+      }
     }
   ]
 }
