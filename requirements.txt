@@ -1,7 +1,7 @@
 psycopg2-binary
 pandas
+pyarrow
 pytest
-sqlalchemy
-apache-airflow
-postgres
-pyspark
+pytest-cov
+sqlalchemy<2.0
+pyspark==3.5.0
