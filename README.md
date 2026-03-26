@@ -57,11 +57,11 @@ specific criteria (e.g., affinity thresholds).
 
 Clone the repo as
 ```
-git clone https://github.com/your-username/protein_data_eng.git
+git clone https://github.com/your-username/protein_data_etl.git
 ```
 Navigate to the root directory to make the scripts executable
 ```
-cd protein_data_eng
+cd protein_data_etl
 chmod +rwx scripts/*
 ```
 Make sure that Docker is installed and running. 
