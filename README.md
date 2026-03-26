@@ -1,6 +1,6 @@
 # Protein Data Engineering Pipeline
 
-The 'protein_etl' project is an Apache Airflow-based Extract, Transform, Load (ETL) pipeline designed for processing
+The `protein_etl` project is an Apache Airflow-based Extract, Transform, Load (ETL) pipeline designed for processing
 proteomics data. It ingests raw data from various formats (CSV, JSON, and Parquet), performs data validation and
 cleaning, and loads the processed data into a PostgreSQL database. The pipeline is tailored for handling
 protein-related datasets, including protein binding affinities, protein metadata, and in vivo measurement data,
