@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 
 import pandas as pd
 from pyspark.sql import SparkSession
@@ -6,9 +7,7 @@ from pyspark.sql import functions as F
 from pyspark.sql.types import IntegerType
 from airflow import DAG
 from airflow.decorators import task
-from airflow.utils.dates import days_ago
 from sqlalchemy import create_engine, text
-import pyspark
 
 
 # Spark and JDBC configuration
@@ -19,6 +18,7 @@ JDBC_PROPERTIES = {
     "password": "postgres",
     "driver": "org.postgresql.Driver"
 }
+SQL_ALCHEMY_CONN_URL = "postgresql+psycopg2://postgres:postgres@host.docker.internal:5436/postgres"
 
 
 def get_spark_session():
@@ -29,6 +29,7 @@ def get_spark_session():
         .config("spark.sql.shuffle.partitions", "8") \
         .getOrCreate()
 
+
 default_args = {
     'owner': 'dgupta'
 }
@@ -37,7 +38,7 @@ with DAG(
         dag_id='protein_etl',
         description='DAG for processing data',
         default_args=default_args,
-        start_date=days_ago(1),
+        start_date=datetime(2024, 1, 1),
         schedule_interval=None
 ) as dag:
     @task
@@ -54,11 +55,12 @@ with DAG(
 
 
     @task
-    def reshape_data(engine, latest_run_id):
+    def reshape_data(latest_run_id):
         """
         Use Spark to perform heavy data transformations across tables.
         Creates aggregated and joined views for downstream analysis.
         """
+        engine = create_engine(SQL_ALCHEMY_CONN_URL)
         spark = None
         try:
             spark = get_spark_session()
@@ -94,9 +96,8 @@ with DAG(
                 ) \
                 .withColumn("run_id", F.lit(latest_run_id).cast(IntegerType()))
 
-            # Drop and recreate table
-            sql = text('DROP TABLE IF EXISTS protein_etl.pk_summary;')
-            engine.execute(sql)
+            with engine.connect() as con:
+                con.execute(text('DROP TABLE IF EXISTS protein_etl.pk_summary;'))
 
             pk_summary_df.write \
                 .mode("append") \
@@ -131,9 +132,8 @@ with DAG(
                 how="left"
             ).withColumn("run_id", F.lit(latest_run_id).cast(IntegerType()))
 
-            # Drop and recreate table
-            sql = text('DROP TABLE IF EXISTS protein_etl.protein_master;')
-            engine.execute(sql)
+            with engine.connect() as con:
+                con.execute(text('DROP TABLE IF EXISTS protein_etl.protein_master;'))
 
             protein_master_df.write \
                 .mode("append") \
@@ -152,8 +152,8 @@ with DAG(
                 ) \
                 .withColumn("run_id", F.lit(latest_run_id).cast(IntegerType()))
 
-            sql = text('DROP TABLE IF EXISTS protein_etl.tissue_exposure_summary;')
-            engine.execute(sql)
+            with engine.connect() as con:
+                con.execute(text('DROP TABLE IF EXISTS protein_etl.tissue_exposure_summary;'))
 
             tissue_summary_df.write \
                 .mode("append") \
@@ -169,28 +169,100 @@ with DAG(
 
 
     @task
-    def post_process():
+    def post_process(latest_run_id):
         """
-        Post-process data as per business needs
-        There will be separate methods for each table
+        Post-process data:
+        - Flag candidate proteins in protein_master
+        - Flag outlier binding records in protein_binding
+        - Cross-reference protein_ids across tables and write issues to data_quality
         """
-        pass
+        engine = create_engine(SQL_ALCHEMY_CONN_URL)
+
+        try:
+            with engine.connect() as con:
+                # === 1: Flag candidate proteins ===
+                # A candidate must have low aggregation risk, high stability, and good expression
+                con.execute(text("""
+                    ALTER TABLE protein_etl.protein_master
+                    ADD COLUMN IF NOT EXISTS is_candidate BOOLEAN DEFAULT FALSE;
+                """))
+                con.execute(text("""
+                    UPDATE protein_etl.protein_master
+                    SET is_candidate = (
+                        agg_score < 0.4
+                        AND stab_score > 0.7
+                        AND expression_level > 200
+                    )
+                    WHERE run_id = :run_id;
+                """), {"run_id": latest_run_id})
+
+                # === 2: Flag outlier binding records ===
+                # Outlier = kd_nm more than 2 standard deviations from the mean for this run
+                con.execute(text("""
+                    ALTER TABLE protein_etl.protein_binding
+                    ADD COLUMN IF NOT EXISTS is_outlier BOOLEAN DEFAULT FALSE;
+                """))
+                con.execute(text("""
+                    UPDATE protein_etl.protein_binding
+                    SET is_outlier = TRUE
+                    WHERE run_id = :run_id
+                      AND ABS(affinity - (
+                            SELECT AVG(affinity) FROM protein_etl.protein_binding WHERE run_id = :run_id
+                          )) > 2 * (
+                            SELECT STDDEV(affinity) FROM protein_etl.protein_binding WHERE run_id = :run_id
+                          );
+                """), {"run_id": latest_run_id})
+
+                # === 3: Cross-reference check ===
+                # Find protein_ids in binding or in_vivo tables that don't exist in protein_info
+                con.execute(text("""
+                    CREATE TABLE IF NOT EXISTS protein_etl.data_quality (
+                        ID SERIAL PRIMARY KEY,
+                        run_id INTEGER,
+                        source_table VARCHAR(255),
+                        protein_id VARCHAR(255),
+                        issue VARCHAR(255)
+                    );
+                """))
+                con.execute(text("""
+                    INSERT INTO protein_etl.data_quality (run_id, source_table, protein_id, issue)
+                    SELECT DISTINCT :run_id, 'protein_binding', protein_id, 'protein_id not found in protein_info'
+                    FROM protein_etl.protein_binding
+                    WHERE run_id = :run_id
+                      AND protein_id NOT IN (
+                            SELECT protein_id FROM protein_etl.protein_info WHERE run_id = :run_id
+                          );
+                """), {"run_id": latest_run_id})
+
+                con.execute(text("""
+                    INSERT INTO protein_etl.data_quality (run_id, source_table, protein_id, issue)
+                    SELECT DISTINCT :run_id, 'in_vivo_measurements', protein_id, 'protein_id not found in protein_info'
+                    FROM protein_etl.in_vivo_measurements
+                    WHERE run_id = :run_id
+                      AND protein_id NOT IN (
+                            SELECT protein_id FROM protein_etl.protein_info WHERE run_id = :run_id
+                          );
+                """), {"run_id": latest_run_id})
+
+        except Exception as e:
+            raise RuntimeError(f"Failed to post_process: {e}") from e
 
 
     @task
-    def read_data_protein_binding(engine, latest_run_id):
+    def read_data_protein_binding(latest_run_id):
         """
         Read protein_binding file, and populate protein_binding table
         """
         # TODO fix hardcoding
 
+        engine = create_engine(SQL_ALCHEMY_CONN_URL)
         chunk_size = 10000
         fname = './data/mock_binding_data.csv'
 
         try:
             # Start with fresh tables to accomodate changes in schema
-            sql = text('DROP TABLE IF EXISTS protein_etl.protein_binding;')
-            engine.execute(sql)
+            with engine.connect() as con:
+                con.execute(text('DROP TABLE IF EXISTS protein_etl.protein_binding;'))
 
             # Read in chunks
             chunks_processed = 0
@@ -213,21 +285,21 @@ with DAG(
 
 
     @task
-    def read_data_protein_info(engine, latest_run_id):
+    def read_data_protein_info(latest_run_id):
         """
         Read protein_info file, and populate protein_info, and protein_dev_metrics tables.
         Processes data in chunks to handle large files efficiently.
         """
         # TODO fix hardcoding
+        engine = create_engine(SQL_ALCHEMY_CONN_URL)
         fname = './data/mock_protein_info.json'
         chunk_size = 50
 
         try:
             # Start with fresh tables to accomodate changes in schema
-            sql = text('DROP TABLE IF EXISTS protein_etl.protein_info;')
-            engine.execute(sql)
-            sql2 = text('DROP TABLE IF EXISTS protein_etl.protein_developability_metrics;')
-            engine.execute(sql2)
+            with engine.connect() as con:
+                con.execute(text('DROP TABLE IF EXISTS protein_etl.protein_info;'))
+                con.execute(text('DROP TABLE IF EXISTS protein_etl.protein_developability_metrics;'))
 
             with open(fname, 'r') as file:
                 data = json.load(file)
@@ -283,19 +355,20 @@ with DAG(
 
 
     @task
-    def read_data_in_vivo_measurements(engine, latest_run_id):
+    def read_data_in_vivo_measurements(latest_run_id):
         """
         Read in_vivo_measurements parquet file using Spark and populate in_vivo_measurements table.
         Uses Spark for efficient processing of large parquet files.
         """
         # TODO fix hardcoding
+        engine = create_engine(SQL_ALCHEMY_CONN_URL)
         fname = './data/mock_in_vivo_measurements.parquet'
 
         spark = None
         try:
             # Start with fresh table to accommodate changes in schema
-            sql = text('DROP TABLE IF EXISTS protein_etl.in_vivo_measurements;')
-            engine.execute(sql)
+            with engine.connect() as con:
+                con.execute(text('DROP TABLE IF EXISTS protein_etl.in_vivo_measurements;'))
 
             # Initialize Spark session
             spark = get_spark_session()
@@ -329,19 +402,85 @@ with DAG(
 
 
     @task
-    def update_final_table():
+    def update_final_table(latest_run_id):
         """
         Invoked when run is complete.
-        Will contain information like paths to output files etc
+        Writes a summary of the run to run_summary including record counts and status.
         """
+        engine = create_engine(SQL_ALCHEMY_CONN_URL)
+
+        try:
+            with engine.connect() as con:
+                con.execute(text("""
+                    CREATE TABLE IF NOT EXISTS protein_etl.run_summary (
+                        ID SERIAL PRIMARY KEY,
+                        run_id INTEGER,
+                        end_date_time TIMESTAMP,
+                        n_proteins INTEGER,
+                        n_binding_records INTEGER,
+                        n_in_vivo_records INTEGER,
+                        n_candidate_proteins INTEGER,
+                        n_outlier_binding_records INTEGER,
+                        n_data_quality_issues INTEGER,
+                        status VARCHAR(50)
+                    );
+                """))
+
+                n_proteins = con.execute(text(
+                    "SELECT COUNT(*) FROM protein_etl.protein_info WHERE run_id = :run_id"
+                ), {"run_id": latest_run_id}).scalar()
+
+                n_binding_records = con.execute(text(
+                    "SELECT COUNT(*) FROM protein_etl.protein_binding WHERE run_id = :run_id"
+                ), {"run_id": latest_run_id}).scalar()
+
+                n_in_vivo_records = con.execute(text(
+                    "SELECT COUNT(*) FROM protein_etl.in_vivo_measurements WHERE run_id = :run_id"
+                ), {"run_id": latest_run_id}).scalar()
+
+                n_candidate_proteins = con.execute(text(
+                    "SELECT COUNT(*) FROM protein_etl.protein_master WHERE run_id = :run_id AND is_candidate = TRUE"
+                ), {"run_id": latest_run_id}).scalar()
+
+                n_outlier_binding_records = con.execute(text(
+                    "SELECT COUNT(*) FROM protein_etl.protein_binding WHERE run_id = :run_id AND is_outlier = TRUE"
+                ), {"run_id": latest_run_id}).scalar()
+
+                n_data_quality_issues = con.execute(text(
+                    "SELECT COUNT(*) FROM protein_etl.data_quality WHERE run_id = :run_id"
+                ), {"run_id": latest_run_id}).scalar()
+
+                con.execute(text("""
+                    INSERT INTO protein_etl.run_summary (
+                        run_id, end_date_time, n_proteins, n_binding_records,
+                        n_in_vivo_records, n_candidate_proteins, n_outlier_binding_records,
+                        n_data_quality_issues, status
+                    ) VALUES (
+                        :run_id, NOW(), :n_proteins, :n_binding_records,
+                        :n_in_vivo_records, :n_candidate_proteins, :n_outlier_binding_records,
+                        :n_data_quality_issues, 'success'
+                    );
+                """), {
+                    "run_id": latest_run_id,
+                    "n_proteins": n_proteins,
+                    "n_binding_records": n_binding_records,
+                    "n_in_vivo_records": n_in_vivo_records,
+                    "n_candidate_proteins": n_candidate_proteins,
+                    "n_outlier_binding_records": n_outlier_binding_records,
+                    "n_data_quality_issues": n_data_quality_issues,
+                })
+
+        except Exception as e:
+            raise RuntimeError(f"Failed to update_final_table: {e}") from e
 
 
     @task
-    def update_start_info(engine):
+    def update_start_info():
         """
         Invoked when dag run is started. Updates table start_info with details of the run.
         The run_id that will be used as the unique identifier for this run is generated.
         """
+        engine = create_engine(SQL_ALCHEMY_CONN_URL)
 
         # TODO these will be fetched from the environment
         de_version = "1.6.1"
@@ -349,15 +488,15 @@ with DAG(
 
         # TODO use airflow operators and jinjified .sql files instead of hardcoded SQL statements
         # TODO batch updates instead of single line operations
-        insert_sql = f"""
+        insert_sql = text("""
             INSERT INTO protein_etl.start_info (de_version, git_commit_hash, start_date_time)
-            VALUES ('{de_version}','{git_hash}', NOW())
+            VALUES (:de_version, :git_hash, NOW())
             RETURNING id;
-            """
+            """)
 
         try:
             with engine.connect() as con:
-                result = con.execute(insert_sql).fetchone()
+                result = con.execute(insert_sql, {"de_version": de_version, "git_hash": git_hash}).fetchone()
                 if result is None:
                     raise RuntimeError("Failed to generate run_id: INSERT did not return a value")
                 latest_run_id = result[0]
@@ -369,26 +508,24 @@ with DAG(
 
 
     ######################  Main pipeline code ######################
-    sql_alchemy_conn_url = "postgresql+psycopg2://postgres:postgres@host.docker.internal:5436/postgres"
-    engine = create_engine(sql_alchemy_conn_url)
 
     # Get the generated run_id for this run
-    latest_run_id = update_start_info(engine)
+    latest_run_id = update_start_info()
 
     # These methods will be generated dynamically because files and file types will change.
     # Data in the first set of tables is stored unaltered as text data.
     # Formatting will take place at later stages.
-    read_data_protein_info_task = read_data_protein_info(engine, latest_run_id)
-    read_data_in_vivo_measurements_task = read_data_in_vivo_measurements(engine, latest_run_id)
-    read_data_protein_binding_task = read_data_protein_binding(engine, latest_run_id)
+    read_data_protein_info_task = read_data_protein_info(latest_run_id)
+    read_data_in_vivo_measurements_task = read_data_in_vivo_measurements(latest_run_id)
+    read_data_protein_binding_task = read_data_protein_binding(latest_run_id)
 
     # The data looks normalized to me, any reshaping and postprocessing will
     # depend on business needs
 
     run_data_checks_task = run_data_checks()
-    reshape_data_task = reshape_data(engine, latest_run_id)
-    post_process_task = post_process()
-    update_final_table_task = update_final_table()
+    reshape_data_task = reshape_data(latest_run_id)
+    post_process_task = post_process(latest_run_id)
+    update_final_table_task = update_final_table(latest_run_id)
 
     latest_run_id >> [
         read_data_protein_info_task, read_data_in_vivo_measurements_task, read_data_protein_binding_task

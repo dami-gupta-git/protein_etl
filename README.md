@@ -7,8 +7,6 @@ protein-related datasets, including protein binding affinities, protein metadata
 making it suitable for bioinformatics and drug development workflows.
 
 The pipeline tracks each run using a unique `run_id` stored in a `start_info` table, ensuring traceability.
-It uses Airflow's `TaskGroup` to organize tasks and a custom `CleaningOperator` to filter data based on
-specific criteria (e.g., affinity thresholds).
 
 ## Features
 - Custom Airflow DAGs for ETL workflows
@@ -20,36 +18,41 @@ specific criteria (e.g., affinity thresholds).
 - Configurable via environment variables
 
 **Data Ingestion**: Reads data from:
-* `mock_binding_data.csv`: Protein binding data (e.g., association/dissociation rates, affinity).  
+* `mock_binding_data.csv`: Protein binding data (e.g., association/dissociation rates, affinity).
 * `mock_protein_info.json`: Protein metadata (e.g., sequence, molecular weight, developability metrics).
 * `mock_in_vivo_measurements.parquet`: In vivo measurements (e.g., concentration in tissues over time).
 
 **Data Transformation:**
-* Normalizes nested JSON data (e.g., splits developability_metrics into a separate table).
-* Filters data using a custom `CleaningOperator` (e.g., removes rows with affinity <= 5.0).
+* Normalizes nested JSON data (e.g., splits `developability_metrics` into a separate `protein_developability_metrics` table).
+* Flags candidate proteins based on developability thresholds (aggregation score, stability, expression level).
+* Flags outlier binding records based on affinity standard deviation.
+* Cross-references protein IDs across tables and writes issues to a `data_quality` table.
 
 **Data Loading**: Stores processed data in a PostgreSQL database under the protein_etl schema, with tables:
 * `protein_binding`
 * `protein_info`
 * `protein_developability_metrics`
 * `in_vivo_measurements`
+* `pk_summary` (pharmacokinetic statistics per protein/tissue/timepoint)
+* `protein_master` (joined view of protein info, developability metrics, and in vivo stats)
+* `tissue_exposure_summary` (drug exposure summary by tissue and payload)
 * `start_info` (for run metadata)
+* `data_quality` (for cross-reference issues flagged during post-processing)
+* `run_summary` (for run-level counts and status)
 
 **Spark Transformations**: Creates aggregated analytical tables:
 * `pk_summary` - Pharmacokinetic statistics per protein/tissue/timepoint
-* `protein_master` - Joined view of protein info, developability metrics, and in vivo stats
+* `protein_master` - Joined view of protein info, developability metrics, and in vivo stats (includes `is_candidate` flag)
 * `tissue_exposure_summary` - Drug exposure summary by tissue and payload
 
 **Scalability**: Processes large CSV files in chunks and uses Apache Spark for parquet ingestion and heavy transformations.
-
-**Modularity**: Uses Airflow `TaskGroup` for task organization and a custom operator for reusable cleaning logic.
 
 ## Building and Running
 
 1. **Prerequisites**
 
 - Docker and Docker Compose
-- (Optional) Python 3.8+ for local script testing
+- (Optional) Python 3.11+ for local script testing
 - Git
 
 
@@ -57,40 +60,44 @@ specific criteria (e.g., affinity thresholds).
 
 Clone the repo as
 ```
-git clone https://github.com/your-username/protein_data_etl.git
+git clone https://github.com/your-username/protein_etl.git
 ```
 Navigate to the root directory to make the scripts executable
 ```
-cd protein_data_etl
+cd protein_etl
 chmod +rwx scripts/*
 ```
-Make sure that Docker is installed and running. 
+Make sure that Docker is installed and running.
 
-Build and run
+3. **Build and run**
 ```
 docker compose up -d
 ```
-Give it a minute to come up. Note there will be errors thrown while it is starting up, these can be ignored. 
+Give it a minute to come up. Note there will be errors thrown while it is starting up, these can be ignored.
+
+> **Note:** If you need a clean database (e.g. first run or after schema changes), bring down the stack with the volume flag so `init.sql` re-runs on next start:
+> ```
+> docker compose down -v && docker compose up -d
+> ```
 
 
-4. **Run the DAG** 
+4. **Run the DAG**
 Open a browser, and point it to `http://localhost:8080/`. This will bring you to a login screen.
 Use credentials `admin` as both Username and Password to Sign In. This will bring up a list of DAGs,
-click on the `protein_etl` DAG, and press on the `Trigger DAG` button. 
-   
-This will run the Airflow DAG. 
+click on the `protein_etl` DAG, and press on the `Trigger DAG` button.
+
+This will run the Airflow DAG.
 
 5. **Output**
-If you click the `Graph` button, you will see the final DAG. If all tasks run successfully, it will look like the below   
+If you click the `Graph` button, you will see the final DAG. If all tasks run successfully, it will look like the below
 <img width="1520" height="578" alt="image" src="https://github.com/user-attachments/assets/aca6b216-99af-4c67-ba4e-42d19dd118ab" />
-<br>     
+<br>
 
-To view the output from the run in the postgres db, you can use the connection string  
+To view the output from the run in the postgres db, you can use the connection string
 
 `postgres://postgres:postgres@localhost:5436/postgres`
 
-
-7. **Stopping the Application**
+6. **Stopping the Application**
 When you want to stop the application, do
 ```
 docker compose down
@@ -128,7 +135,7 @@ pytest -m "not spark"
 pytest -m spark
 
 # Run with coverage report
-pytest --cov=utils --cov-report=html
+pytest --cov=dags --cov-report=html
 
 # Run integration tests
 pytest -m integration
@@ -159,11 +166,13 @@ The pipeline uses Apache Spark for:
 ### Data Flow
 
 ```
-Raw Files                    Staging Tables              Analytical Tables
------------                  --------------              -----------------
-CSV (binding)      -->       protein_binding
-JSON (protein)     -->       protein_info          -->  protein_master
-                   -->       protein_dev_metrics
+Raw Files                    Staging Tables              Analytical Tables           Output Tables
+-----------                  --------------              -----------------           -------------
+CSV (binding)      -->       protein_binding (is_outlier flag)
+JSON (protein)     -->       protein_info          -->  protein_master (is_candidate flag)
+                   -->       protein_developability_metrics
 Parquet (in vivo)  -->       in_vivo_measurements  -->  pk_summary
                                                    -->  tissue_exposure_summary
+                                                                                    data_quality
+                                                                                    run_summary
 ```

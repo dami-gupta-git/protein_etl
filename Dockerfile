@@ -1,4 +1,4 @@
-FROM apache/airflow:2.7.3-python3.8
+FROM apache/airflow:2.10.5-python3.11
 USER root
 
 # Install Java (required for PySpark)

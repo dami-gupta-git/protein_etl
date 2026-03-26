@@ -97,10 +97,13 @@ def sample_binding_data() -> pd.DataFrame:
     """Sample protein binding data."""
     return pd.DataFrame({
         "protein_id": ["PRT-001", "PRT-001", "PRT-002", "PRT-002"],
-        "target": ["PD1", "PD1", "CD19", "CD19"],
-        "kd_nm": [1.5, 1.8, 2.3, 2.1],
-        "kon": [1e5, 1.1e5, 9e4, 9.5e4],
-        "koff": [1e-4, 1.2e-4, 2e-4, 1.8e-4]
+        "experiment_date": ["4/28/22", "2/20/25", "4/28/22", "2/20/25"],
+        "association_rate": [983386.4, 624394.1, 750000.0, 810000.0],
+        "disassociation_rate": [0.00075, 0.00903, 0.00120, 0.00450],
+        "affinity": [97.01, 40.45, 62.5, 55.3],
+        "experiment_temp": [20.8, 22.5, 21.0, 23.1],
+        "buffer_conditions": ["HEPES pH 7.2", "Tris pH 7.7", "HEPES pH 7.2", "Tris pH 7.7"],
+        "batch": ["X05", "X04", "X05", "X04"]
     })
 
 

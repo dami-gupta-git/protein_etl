@@ -94,7 +94,7 @@ class TestValidateCsvChunk:
 
     def test_validate_with_required_columns(self, sample_binding_data):
         """Test validation with required columns check."""
-        required = ["protein_id", "target", "kd_nm"]
+        required = ["protein_id", "affinity", "association_rate"]
         assert validate_csv_chunk(sample_binding_data, required_columns=required) is True
 
     def test_validate_empty_raises(self):
