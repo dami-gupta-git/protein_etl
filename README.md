@@ -8,6 +8,10 @@ making it suitable for bioinformatics and drug development workflows.
 
 The pipeline tracks each run using a unique `run_id` stored in a `start_info` table, ensuring traceability.
 
+## Sample Pipeline
+<img width="1026" height="383" alt="image" src="https://github.com/user-attachments/assets/b541c6fe-3a19-4c70-846e-307ad4755ac8" />
+
+
 ## Features
 - Custom Airflow DAGs for ETL workflows
 - **Apache Spark** integration for large-scale data processing
@@ -18,7 +22,7 @@ The pipeline tracks each run using a unique `run_id` stored in a `start_info` ta
 - Configurable via environment variables
 
 **Data Ingestion**: Reads data from:
-* `mock_binding_data.csv`: Protein binding data (e.g., association/dissociation rates, affinity).
+* `mock_binding_data.csv`: Protein binding data (e.g., association/dissociation rates, affinity).  
 * `mock_protein_info.json`: Protein metadata (e.g., sequence, molecular weight, developability metrics).
 * `mock_in_vivo_measurements.parquet`: In vivo measurements (e.g., concentration in tissues over time).
 
@@ -42,7 +46,7 @@ The pipeline tracks each run using a unique `run_id` stored in a `start_info` ta
 
 **Spark Transformations**: Creates aggregated analytical tables:
 * `pk_summary` - Pharmacokinetic statistics per protein/tissue/timepoint
-* `protein_master` - Joined view of protein info, developability metrics, and in vivo stats (includes `is_candidate` flag)
+* `protein_master` - Joined view of protein info, developability metrics, and in vivo stats
 * `tissue_exposure_summary` - Drug exposure summary by tissue and payload
 
 **Scalability**: Processes large CSV files in chunks and uses Apache Spark for parquet ingestion and heavy transformations.
@@ -80,22 +84,22 @@ Give it a minute to come up. Note there will be errors thrown while it is starti
 > docker compose down -v && docker compose up -d
 > ```
 
-
-4. **Run the DAG**
+4. **Run the DAG** 
 Open a browser, and point it to `http://localhost:8080/`. This will bring you to a login screen.
 Use credentials `admin` as both Username and Password to Sign In. This will bring up a list of DAGs,
-click on the `protein_etl` DAG, and press on the `Trigger DAG` button.
-
-This will run the Airflow DAG.
+click on the `protein_etl` DAG, and press on the `Trigger DAG` button. 
+   
+This will run the Airflow DAG. 
 
 5. **Output**
-If you click the `Graph` button, you will see the final DAG. If all tasks run successfully, it will look like the below
+If you click the `Graph` button, you will see the final DAG. If all tasks run successfully, it will look like the below   
 <img width="1520" height="578" alt="image" src="https://github.com/user-attachments/assets/aca6b216-99af-4c67-ba4e-42d19dd118ab" />
-<br>
+<br>     
 
-To view the output from the run in the postgres db, you can use the connection string
+To view the output from the run in the postgres db, you can use the connection string  
 
 `postgres://postgres:postgres@localhost:5436/postgres`
+
 
 6. **Stopping the Application**
 When you want to stop the application, do
@@ -166,8 +170,8 @@ The pipeline uses Apache Spark for:
 ### Data Flow
 
 ```
-Raw Files                    Staging Tables              Analytical Tables           Output Tables
------------                  --------------              -----------------           -------------
+Raw Files                    Staging Tables              Analytical Tables
+-----------                  --------------              -----------------
 CSV (binding)      -->       protein_binding (is_outlier flag)
 JSON (protein)     -->       protein_info          -->  protein_master (is_candidate flag)
                    -->       protein_developability_metrics
