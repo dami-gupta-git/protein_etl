@@ -10,7 +10,7 @@ The pipeline tracks each run using a unique `run_id` stored in a `start_info` ta
 It uses Airflow's `TaskGroup` to organize tasks and a custom `CleaningOperator` to filter data based on
 specific criteria (e.g., affinity thresholds).
 
-<img width="1333" height="474" alt="Screenshot 2026-03-26 at 1 23 43 PM" src="https://github.com/user-attachments/assets/5650cf20-585b-45ca-8a54-96ad1014e41f" />
+<img width="1026" height="383" alt="image" src="https://github.com/user-attachments/assets/786bc7e4-0d33-4762-a15b-ff643d09fc80" />
 
 
 ## Features
